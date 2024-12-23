@@ -1,4 +1,4 @@
-<section class="pb-5" id="features" x-data="{ tab: 'Web Design' }">
+<section class="pb-5" id="features" x-data="{ tab: 'SEO' }">
     <div class="container py-3">
         <div class="row">
             <div class="col-8 mx-auto">

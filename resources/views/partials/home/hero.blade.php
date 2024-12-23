@@ -1,7 +1,7 @@
 <section id="hero" class="bg-white">
     <div class="container py-5">
         <div class="d-flex gap-4">
-            <div class="col-span-3 rounded-4 bg-white cursor-pointer shadow border-solid border-2 relative overflow-hidden">
+            <div class="col-span-3 rounded-4 bg-white cursor-pointer shadow-md border-solid border-1 relative overflow-hidden">
                 <div class="my-auto justify-center">
                     <div class="d-flex">
                         <div class="col-8 ps-4 pe-5 py-5">
