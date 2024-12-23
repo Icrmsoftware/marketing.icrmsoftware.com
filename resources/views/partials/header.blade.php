@@ -1,45 +1,52 @@
-<header class="py-3 sticky-top bg-white">
+<header class="py-3 bg-stone-950">
     <div class="container">
         <div class="row">
-            <div class="col-10 mx-auto">
-                <div class="d-flex justify-between">
-                    <div class="my-auto">
-                        {{-- <img src="https://icrmsoftware.com/storage/settings/July2022/Ew80xFkveGaRWvdwFhi7.png"
-                        class="img-fluid"
-                        alt=""> --}}
-                        <h1 class="text-black text-4xl inter-600">ICRM Software</h1>
-                    </div>
-                    <div class="my-auto">
+            <div class="d-flex justify-between">
+                <div class="my-auto">
+                    <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
+                    class="img-fluid h-14"
+                    alt="">
+                    {{-- <h1 class="text-white text-3xl inter-600">
+                        ICRM Software
+                    </h1> --}}
+                </div>
+                <div class="my-auto">
 
-                        <ul class="d-flex gap-4 my-auto text-xl font-semibold">
-                            <li class="my-auto">
-                                <a href="{{ route('welcome') }}">
-                                    Features
-                                </a>
-                            </li>
-                            <li class="my-auto">
-                                <a href="{{ route('welcome') }}">
-                                    Pricing
-                                </a>
-                            </li>
-                            <li class="my-auto">
-                                <a href="{{ route('welcome') }}">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li class="my-auto relative">
-                                <a href="{{ route('welcome') }}" class="my-auto">
-                                    Support
-                                </a>
-                            </li>
-                            <li class="my-auto">
-                                <a href="{{ route('welcome') }}" class="btn btn-md bg-lime-300 hover:bg-lime-400 text-zinc-900 text-uppercase rounded-3 py-2 px-4 text-lg fw-semibold rounded-0">
-                                    Get Started
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="d-flex gap-4 my-auto text-lg text-stone-200 inter-400">
+                        <li class="my-auto">
+                            <a href="{{ route('welcome') }}">
+                                Features
+                            </a>
+                        </li>
 
-                    </div>
+                        <li class="my-auto">
+                            <a href="#pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="my-auto">
+                            <a href="#howitworks">
+                                How it works
+                            </a>
+                        </li>
+
+                        <li class="my-auto">
+                            <a href="#faq">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="my-auto relative">
+                            <a href="{{ route('welcome') }}" class="my-auto">
+                                Support
+                            </a>
+                        </li>
+                        <li class="my-auto">
+                            <a href="{{ route('welcome') }}" class="btn btn-md bg-lime-400 hover:bg-lime-300 text-zinc-950 hover:text-zinc-950 text-uppercase rounded-3 py-2 px-4 text-lg fw-semibold rounded-0">
+                                Get Started
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
