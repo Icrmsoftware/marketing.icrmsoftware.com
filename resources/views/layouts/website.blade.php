@@ -57,7 +57,7 @@
 
 
     <link rel="stylesheet" href="{{ asset('css/icrm.css') }}?v={{ time() }}">
-
+    @livewireStyles
 </head>
 
 <body class="bg-white">
@@ -65,7 +65,7 @@
     @yield('content')
     @include('partials.footer')
 
-
+    @livewireScripts
 
     <!-- jQuery (Required) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

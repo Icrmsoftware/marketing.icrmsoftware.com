@@ -16,7 +16,9 @@
                             </h3>
                             <div class="d-flex gap-3 mt-4 ms-2">
                                 <div>
-                                    <a href="#" class="btn btn-dark rounded-3 text-lg py-2.5 px-4 font-semibold text-uppercase">
+                                    <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-3 text-lg py-2.5 px-4 font-semibold text-uppercase">
                                         Apply Now
                                     </a>
                                     <p class="mt-3 text-md text-zinc-500 inter-300">Get Your Free Consultation Today!</p>
@@ -74,7 +76,11 @@
                     </p>
 
                     <div class="mt-4">
-                        <a href="#" class="btn btn-lg
+                        <a
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#getStartedCanvas"
+                        aria-controls="getStartedCanvas"
+                        class="btn btn-lg
                         border-solid border-1
                         {{-- bg-lime-400 hover:bg-lime-300 text-zinc-950 --}}
                         bg-stone-50 hover:bg-lime-400 text-zinc-950

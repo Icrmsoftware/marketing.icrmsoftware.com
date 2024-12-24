@@ -8,14 +8,16 @@
 @include('partials.home.stats')
 @include('partials.home.features')
 @include('partials.pricing')
+@include('partials.home.testimonials')
 @include('partials.home.howitworks')
 
-@include('partials.home.testimonials')
+
 
 @include('partials.home.faq')
-@include('partials.home.cta')
+@livewire('cta', ['position' => 'fullpage'])
 
 
+@include('partials.getstarted')
 
 
 @endsection

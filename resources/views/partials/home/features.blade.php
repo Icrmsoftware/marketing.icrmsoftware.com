@@ -70,7 +70,9 @@
                             <div>
                                 <h3 class="text-xl poppins-semibold mb-2">Responsive Designs for All Devices</h3>
                                 <p class="text-md inter-400">Your website will look stunning and function perfectly on desktops, tablets, and mobiles.</p>
-                                <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                     Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                 </a>
                             </div>
@@ -86,7 +88,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Custom Layouts Aligned with Your Brand</h3>
                                         <p class="text-md inter-400">Designs tailored to reflect your brand’s personality and goals.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -100,7 +104,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Fast-Loading, Sleek Interfaces</h3>
                                         <p class="text-md inter-400">Deliver a seamless browsing experience with optimized, high-speed pages.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -119,7 +125,9 @@
                             <div class="mt-3">
                                 <h3 class="text-xl poppins-semibold my-2">Intuitive Content Management System</h3>
                                 <p class="text-md inter-400">Easily update and control your website content anytime.</p>
-                                <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                     Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                 </a>
                             </div>
@@ -135,7 +143,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Real-Time Editing and Publishing</h3>
                                         <p class="text-md inter-400">Make changes and see them live instantly.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -149,7 +159,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Scalable Structure for Growth</h3>
                                         <p class="text-md inter-400">Designed to grow with your business and its evolving needs.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -168,7 +180,9 @@
                             <div class="mt-3">
                                 <h3 class="text-xl poppins-semibold my-2">Basic SEO Setup</h3>
                                 <p class="text-md inter-400">Lay the foundation for better online visibility.</p>
-                                <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                     Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                 </a>
                             </div>
@@ -184,7 +198,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Optimized Meta Tags and Keywords</h3>
                                         <p class="text-md inter-400">Ensure your website aligns with search engine requirements.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -198,7 +214,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Performance Tracking</h3>
                                         <p class="text-md inter-400">Monitor your rankings and improve over time.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -217,7 +235,9 @@
                             <div class="mt-3">
                                 <h3 class="text-xl poppins-semibold my-2">SSL Certification</h3>
                                 <p class="text-md inter-400">Protect your website and its users with top-notch encryption.</p>
-                                <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                     Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                 </a>
                             </div>
@@ -233,7 +253,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Automatic Backups</h3>
                                         <p class="text-md inter-400">Keep your data safe with regular and reliable backups.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>
@@ -247,7 +269,9 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">High-Speed Hosting</h3>
                                         <p class="text-md inter-400">Enjoy faster load times with scalable, high-performance AWS servers.</p>
-                                        <a href="#" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
+                                        <a data-bs-toggle="offcanvas"
+                                    data-bs-target="#getStartedCanvas"
+                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
                                             Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
                                         </a>
                                     </div>

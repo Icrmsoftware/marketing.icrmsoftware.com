@@ -97,6 +97,9 @@
                                     </li> --}}
                                 </ul>
                                 <button type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#getStartedCanvas"
+                                aria-controls="getStartedCanvas"
                                     class="text-white bg-fuchsia-700 hover:bg-lime-500
                                     focus:ring-4 focus:outline-none focus:ring-blue-200
                                     font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
@@ -186,11 +189,20 @@
                                     </li> --}}
                                 </ul>
                                 <button type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#getStartedCanvas"
+                                aria-controls="getStartedCanvas"
                                     class="text-white bg-fuchsia-700 hover:bg-lime-500
                                     focus:ring-4 focus:outline-none focus:ring-blue-200
                                     font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Choose
                                     plan</button>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="text-center text-stone-400 cursor-pointer">
+                                <h3>Avail December 2024 offer by <u class="text-fuchsia-400">clicking here</u></h3>
                             </div>
                         </div>
                     </div>

@@ -3,9 +3,10 @@
         <div class="row">
             <div class="d-flex justify-between">
                 <div class="my-auto">
-                    <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
-                    class="img-fluid h-14"
-                    alt="">
+                    <a href="{{ route('welcome') }}">
+                        <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
+                            class="img-fluid h-14" alt="">
+                    </a>
                     {{-- <h1 class="text-white text-3xl inter-600">
                         ICRM Software
                     </h1> --}}
@@ -41,7 +42,11 @@
                             </a>
                         </li>
                         <li class="my-auto">
-                            <a href="{{ route('welcome') }}" class="btn btn-md bg-lime-400 hover:bg-lime-300 text-zinc-950 hover:text-zinc-950 text-uppercase rounded-3 py-2 px-4 text-lg fw-semibold rounded-0">
+                            <a
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#getStartedCanvas"
+                            aria-controls="getStartedCanvas"
+                                class="btn btn-md bg-lime-400 hover:bg-lime-300 text-zinc-950 hover:text-zinc-950 text-uppercase rounded-3 py-2 px-4 text-lg fw-semibold rounded-0">
                                 Get Started
                             </a>
                         </li>
