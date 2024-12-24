@@ -14,24 +14,24 @@
 
                     <ul class="d-flex gap-4 my-auto text-lg text-stone-200 inter-400">
                         <li class="my-auto">
-                            <a href="{{ route('welcome') }}">
+                            <a href="{{ route('welcome') }}#features">
                                 Features
                             </a>
                         </li>
 
                         <li class="my-auto">
-                            <a href="#pricing">
+                            <a href="{{ route('welcome') }}#pricing">
                                 Pricing
                             </a>
                         </li>
                         <li class="my-auto">
-                            <a href="#howitworks">
+                            <a href="{{ route('welcome') }}#howitworks">
                                 How it works
                             </a>
                         </li>
 
                         <li class="my-auto">
-                            <a href="#faq">
+                            <a href="{{ route('welcome') }}#faq">
                                 FAQ
                             </a>
                         </li>

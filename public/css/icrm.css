@@ -149,3 +149,34 @@
     }
   }
 
+
+
+
+
+
+  .owl-nav
+  {
+    float: right;
+    margin: 1em;
+  }
+
+.owl-nav .owl-prev
+{
+  margin-right: 0.5em;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span
+{
+  border: 1px solid #333;
+  padding: 0em 0.55em 0.15em 0.55em;
+  border-radius: 1.5em;
+  font-size: 2.2em;
+}
+
+.owl-nav .owl-prev span:hover,
+.owl-nav .owl-next span:hover
+{
+  background: #333;
+  color: #fff;
+}

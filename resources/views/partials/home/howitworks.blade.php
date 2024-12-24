@@ -1,5 +1,5 @@
-<section id="howitworks" class="pb-5 bg-white relative" x-data="{ tab: 1 }">
-    <div class="container">
+<section id="howitworks" class="py-5 bg-white relative" x-data="{ tab: 1 }">
+    <div class="container py-5">
         <div class="row">
             <div class="col-9 mx-auto">
                 <div class="text-center mb-5">
@@ -33,10 +33,10 @@
                         </div>
                     </div>
                     <div class="rounded-3">
-                        <div x-show="tab == 1" class="bg-stone-100 p-4">
-                            <div class="mb-2">
+                        <div x-show="tab == 1" class="bg-purple-100 p-5">
+                            {{-- <div class="mb-2">
                                 STEP 01
-                            </div>
+                            </div> --}}
                             <h3 class="text-3xl poppins-semibold text-black">Tell Us What You Need</h3>
                             <p class="inter-400 text-lg mt-1 text-stone-700">Share your goals, ideas, and vision. We’ll listen, understand, and create a plan tailored just for you.</p>
                             <div class="mt-4">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
 
-                        <div x-show="tab == 2" class="bg-stone-100 p-4">
+                        <div x-show="tab == 2" class="bg-purple-100 p-5">
                             <h3 class="text-3xl poppins-semibold text-black">Watch Your Website Take Shape</h3>
                             <p class="inter-400 text-lg mt-1 text-stone-700">Our team designs and builds a beautiful, user-friendly website that matches your vision and brand perfectly.</p>
                             <div class="mt-4">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
 
-                        <div x-show="tab == 3" class="bg-stone-100 p-4">
+                        <div x-show="tab == 3" class="bg-purple-100 p-5">
                             <h3 class="text-3xl poppins-semibold text-black">Launch and Grow Together</h3>
                             <p class="inter-400 text-lg mt-1 text-stone-700">Once your website is live, we’re here to support you with updates, growth strategies, and ongoing success.</p>
                             <div class="mt-4">

@@ -1,7 +1,10 @@
 <section id="hero" class="bg-white">
     <div class="container py-5">
         <div class="d-flex gap-4">
-            <div class="col-span-3 rounded-4 bg-white cursor-pointer shadow-md border-solid border-1 relative overflow-hidden">
+            <div class="col-span-3 rounded-4
+            bg-purple-100 shadow-md
+            {{-- border-solid border-1 --}}
+            cursor-pointer relative overflow-hidden">
                 <div class="my-auto justify-center">
                     <div class="d-flex">
                         <div class="col-8 ps-4 pe-5 py-5">
@@ -20,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="my-auto pe-4">
+                        <div class="my-auto">
                             {{-- <img src="{{ Voyager::image('/Images/original-ccf7358e67c02f6c2b8b2aae66554e49-removebg-preview.png') }}"
                             class="img-fluid"
                             alt=""> --}}
@@ -33,7 +36,10 @@
                             {{-- <img src="https://www.zohowebstatic.com/sites/zweb/images/creator/functions/switch-to-zcreator-illustration.png"
                             class="img-fluid"
                             alt=""> --}}
-                            <img src="https://icommerce.co.in//storage/icrm/usps/ezgif-5-2bc355c60b.webp"
+                            {{-- <img src="https://icommerce.co.in//storage/icrm/usps/ezgif-5-2bc355c60b.webp"
+                            class="img-fluid"
+                            alt=""> --}}
+                            <img src="https://cdn.prod.website-files.com/5d816b07d269385f68dbcab0/60f6ec4d104e8f554cf58781_greg-gunn-illustration-for-designers-3-start-illustrating-1080x1080-min.png"
                             class="img-fluid"
                             alt="">
                         </div>

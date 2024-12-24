@@ -1,4 +1,4 @@
-<section class="py-5 bg-stone-900">
+<section class="py-5 bg-stone-900" id="pricing">
     <div class="container py-4">
         <div class="row">
             <div class="col-10 mx-auto">
