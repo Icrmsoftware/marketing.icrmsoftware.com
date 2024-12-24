@@ -13,7 +13,7 @@
 @include('partials.home.testimonials')
 
 @include('partials.home.faq')
-
+@include('partials.home.cta')
 
 
 
