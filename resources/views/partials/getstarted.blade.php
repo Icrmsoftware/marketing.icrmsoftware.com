@@ -5,7 +5,8 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
 
 <div class="offcanvas offcanvas-bottom bg-black"
 style="min-block-size: 100%;"
-data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="getStartedCanvas" aria-labelledby="getStartedCanvasLabel">
+data-bs-scroll="true"
+data-bs-backdrop="false" tabindex="-1" id="getStartedCanvas" aria-labelledby="getStartedCanvasLabel">
   <div class="offcanvas-header bg-black">
     {{-- <h5 class="offcanvas-title" id="getStartedCanvasLabel">Offcanvas with body scrolling</h5> --}}
     <button type="button" class="btn-close me-2" style="color: white !important" data-bs-dismiss="offcanvas" aria-label="Close">

@@ -37,7 +37,7 @@
                             </a>
                         </li>
                         <li class="my-auto relative">
-                            <a href="{{ route('welcome') }}" class="my-auto">
+                            <a href="/icrm" class="my-auto">
                                 Support
                             </a>
                         </li>

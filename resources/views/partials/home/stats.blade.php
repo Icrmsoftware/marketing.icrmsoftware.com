@@ -1,4 +1,4 @@
-<section class="pt-2 pb-5 bg-white mb-5 border-b">
+<section class="pt-5 pb-5 bg-white border-t">
     <div class="container">
         <div class="row">
             <div class="d-flex justify-between">

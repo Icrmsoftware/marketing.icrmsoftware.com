@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-9 mx-auto">
                         <div class="d-flex gap-3">
-                            <div class="col p-4 bg-stone-900 border border-gray-200 rounded-lg shadow sm:p-8">
+                            <div class="col p-4 bg-stone-900 border-solid border-1 border-gray-200 rounded-lg shadow sm:p-8">
                                 <h5 class="mb-4 text-xl font-medium text-gray-400">Startup plan</h5>
                                 <div class="flex items-baseline text-gray-900 dark:text-white">
                                     <span class="text-3xl font-semibold">₹</span>
@@ -200,10 +200,15 @@
                             </div>
                         </div>
 
-                        <div class="mt-4">
-                            <div class="text-center text-stone-400 cursor-pointer">
-                                <h3>Avail December 2024 offer by <u class="text-fuchsia-400">clicking here</u></h3>
-                            </div>
+                        <div class="mt-4"
+                        >
+                            <a
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offerCanvas"
+                            aria-controls="offerCanvas"
+                             class="text-center text-stone-400 cursor-pointer">
+                                <h3>Avail exclusive discounts on our services by <u class="text-fuchsia-400">clicking here</u></h3>
+                            </a>
                         </div>
                     </div>
                 </div>

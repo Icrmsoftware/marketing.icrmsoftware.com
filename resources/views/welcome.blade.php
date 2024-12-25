@@ -5,8 +5,10 @@
 
 
 @include('partials.home.hero')
-@include('partials.home.stats')
+
 @include('partials.home.features')
+@include('partials.home.stats')
+
 @include('partials.pricing')
 @include('partials.home.testimonials')
 @include('partials.home.howitworks')
@@ -14,10 +16,10 @@
 
 
 @include('partials.home.faq')
-@livewire('cta', ['position' => 'fullpage'])
-
+@livewire('cta')
 
 @include('partials.getstarted')
+
 
 
 @endsection
