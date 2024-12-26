@@ -3,7 +3,7 @@
         <div class="d-flex justify-between flex-column flex-lg-row gap-lg-4">
             <div
                 class="col-span-3 lg:rounded-xl
-            bg-purple-100 shadow-lg
+            bg-purple-100
             cursor-pointer relative overflow-hidden">
                 <div class="my-auto justify-center">
                     <div class="d-flex flex-column flex-md-row">

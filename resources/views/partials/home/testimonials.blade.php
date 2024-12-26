@@ -8,10 +8,10 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-4">
+    <div class="container-fluid px-0 mt-4">
         <div class="relative overflow-hidden rounded-t-xl min-h-screens">
             <div class="d-none d-lg-block">
-                <img src="{{ Voyager::image('/Images/Onward and upward with our customers.png') }}"
+                <img src="{{ Voyager::image('/Images/Frame 417_2.png') }}"
                     class="img-fluid w-100 shadow" alt="">
             </div>
             <div class="lg:absolute top-0 left-0 right-0 bottom-0">
@@ -26,11 +26,11 @@
                                 everything was handled with professionalism and precision. Excellent job!
                             </h2>
                             <div class="mt-4">
-                                <p class="text-lg text-stone-950">– Priya Singh, COO</p>
+                                <p class="text-lg text-stone-950">– Kanishka Thakur</p>
                                 <div class="d-flex gap-2 mt-3">
                                     @for ($star = 0; $star < 5; $star++)
                                         <div>
-                                            <i class="fa fa-star text-amber-300 text-lg"></i>
+                                            <i class="fa fa-star text-amber-500 text-lg"></i>
                                         </div>
                                     @endfor
                                 </div>
