@@ -1,6 +1,6 @@
 @if (Session::has('alert-message'))
-    <div class="bg-lime-500 py-5 my-auto">
-        <div class="text-center text-stone-950 inter-500 cursor-pointer text-2xl">
+    <div class="bg-lime-500 py-3 py-md-5 my-auto">
+        <div class="text-center text-stone-950 inter-500 cursor-pointer text-lg md:text-2xl">
             <h3>{{ Session::get('alert-message') }}</h3>
         </div>
     </div>
@@ -33,7 +33,7 @@
                         </ul>
                     </div>
 
-                    <div class="my-auto d-block d-md-none">
+                    <div class="my-auto d-block d-lg-none">
                           <div>
                             <a data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
                                 <i class="fa-light fa-bars text-2xl text-stone-400"></i>
