@@ -1,9 +1,9 @@
 <section class="py-5 bg-stone-900" id="pricing">
     <div class="container py-4">
         <div class="row">
-            <div class="col-12 col-md-10 mx-auto">
+            <div class="col-12 col-lg-10 mx-auto">
                 <div class="row">
-                    <div class="col-12 col-md-8 mx-auto my-auto text-center mb-5">
+                    <div class="col-12 col-lg-8 mx-auto my-auto text-center mb-5">
                         <h2 class="text-4xl md:text-5xl poppins-semibold text-white">
                             Know exactly what you’re paying for, no surprises.
                         </h2>
@@ -11,7 +11,7 @@
                             Keeping everything transparent and clear.
                         </p>
                     </div>
-                    <div class="col-12 col-md-9 mx-auto">
+                    <div class="col-12 col-lg-9 mx-auto">
                         <div class="d-flex flex-column flex-sm-row gap-5 gap-sm-4">
                             <div class="col p-4 bg-stone-900 border-solid border-1 border-gray-200 rounded-lg shadow sm:p-8">
                                 <h5 class="mb-4 text-xl font-medium text-gray-400">Startup plan</h5>
@@ -225,7 +225,7 @@
 
     </div>
 </section>
-<section class="bg-fuchsia-950 sticky-top d-none d-md-block">
+<section class="bg-fuchsia-950 sticky-top d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-12 my-auto py-4 py-md-1">

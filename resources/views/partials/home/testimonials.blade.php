@@ -10,17 +10,17 @@
 
     <div class="container-fluid mt-4">
         <div class="relative overflow-hidden rounded-t-xl min-h-screens">
-            <div class="d-none d-md-block">
+            <div class="d-none d-lg-block">
                 <img src="{{ Voyager::image('/Images/Onward and upward with our customers.png') }}"
                     class="img-fluid w-100 shadow" alt="">
             </div>
-            <div class="md:absolute top-0 left-0 right-0 bottom-0">
-                <div class="row pt-md-5 pe-md-4">
-                    <div class="col-12 col-md">
+            <div class="lg:absolute top-0 left-0 right-0 bottom-0">
+                <div class="row pt-lg-5 pe-lg-4">
+                    <div class="col-12 col-lg">
 
                     </div>
-                    <div class="col-12 col-md">
-                        <div class="bg-white rounded-t-xl py-4 py-md-5 px-3 px-md-5 min-h-screen shadow">
+                    <div class="col-12 col-lg">
+                        <div class="bg-white rounded-t-xl py-4 py-lg-5 px-3 px-lg-5 min-h-screens shadow">
                             <h2 class="text-2xl md:text-4xl inter-500 text-stone-950" style="line-height: 1.3em;">
                                 iCommerce team made the entire process stress-free. From content management to hosting,
                                 everything was handled with professionalism and precision. Excellent job!
@@ -68,11 +68,11 @@
     <div class="container">
         <div class="py-5">
             <div class="row">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-lg-7">
                     <h2 class="text-3xl md:text-5xl poppins-semibold">Trusted by 10+ thousands customers around the Asia.</h2>
                 </div>
             </div>
-            <div class="row my-4 my-md-5">
+            <div class="row my-4 my-lg-5">
                 <div class="owl-carousel testimonials">
                     <div class="d-flex flex-column bg-gray-200 py-4 px-4 rounded-2 shadow-sm">
                         <div class="mt-3 mb-3">

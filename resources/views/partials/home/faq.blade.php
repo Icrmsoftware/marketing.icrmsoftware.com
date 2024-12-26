@@ -1,7 +1,7 @@
 <section id="faq" class="py-5 bg-stone-900">
     <div class="container py-3 py-md-5">
         <div class="row">
-            <div class="col-12 col-md-10 mx-auto">
+            <div class="col-12 col-lg-10 mx-auto">
                 <div class="text-center mb-4 mb-md-5">
                     <h2 class="text-4xl md:text-5xl poppins-semibold text-white lh-2">
                         Got Questions? We’ve Got Answers!
@@ -13,7 +13,7 @@
 
                 <div>
                     <div class="row">
-                        <div class="col-12 col-md-8 mx-auto" x-data="{ faq: 1 }">
+                        <div class="col-12 col-lg-8 mx-auto" x-data="{ faq: 1 }">
 
                             <div class="py-3 px-3" @click.prevent="faq = 1">
                                 <div class="pt-3 pb-3 cursor-pointer"

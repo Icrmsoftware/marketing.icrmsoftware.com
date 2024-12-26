@@ -1,7 +1,7 @@
 <div>
     <div class="offcanvas offcanvas-bottom bg-stone-950 mx-10 max-w-6xl m-auto {{ $canvas ? 'show' : '' }}"
     style="min-height: 100%;"
-    data-bs-scroll="true"
+    data-bs-scroll="false"
     data-bs-backdrop="true"
     tabindex="-1"
     id="offerCanvas"
@@ -61,7 +61,7 @@
                                     <h4 class="text-amber-400 inter-500 text-2xl animate-bounce">Claim Your Offer Now!</h4>
                                 </div>
                                 <form wire:submit.prevent='submitlead'>
-                                    <div class="d-flex flex-column flex-sm-row gap-4 justify-center">
+                                    <div class="d-flex flex-column flex-lg-row gap-4 justify-center">
                                         <div>
                                             <input type="text" class="form-control py-3 @error('name') bg-rose-200 border-danger border-3 @enderror" placeholder="Your name"
                                             wire:model.live='name'

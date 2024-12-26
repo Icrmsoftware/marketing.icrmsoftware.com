@@ -4,7 +4,8 @@ data-bs-toggle="offcanvas"
 data-bs-target="#getStartedCanvas"
 aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
 
-    <div class="offcanvas offcanvas-bottom bg-black @if($this->canvas == true) show @endif" style="min-block-size: 100%;" data-bs-scroll="true"
+    <div class="offcanvas offcanvas-bottom bg-black @if($this->canvas == true) show @endif"
+        style="min-block-size: 100%;" data-bs-scroll="false"
         data-bs-backdrop="false" tabindex="-1" id="getStartedCanvas" aria-labelledby="getStartedCanvasLabel">
         <div class="offcanvas-header bg-black">
             {{-- <h5 class="offcanvas-title" id="getStartedCanvasLabel">Offcanvas with body scrolling</h5> --}}
@@ -18,15 +19,15 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
         <div class="offcanvas-body bg-black">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-11 mx-auto">
+                    <div class="col-12 col-lg-11 mx-auto">
                         <div class="row">
-                            <div class="col-12 col-md my-auto">
-                                <div class="mb-3 mb-md-5 d-none d-md-block">
+                            <div class="col-12 col-lg my-auto">
+                                <div class="mb-3 mb-lg-5 d-none d-lg-block">
                                     <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
-                                        class="img-fluid h-14 md:h-20" alt="">
+                                        class="img-fluid h-14 md:h-16 lg:h-20" alt="">
                                 </div>
                                 <div>
-                                    <h2 class="text-5xl md:text-8xl text-white poppins-semibold">You're in <span
+                                    <h2 class="text-5xl md:text-8xl lg:text-8xl text-white poppins-semibold">You're in <span
                                             class="text-fuchsia-400">Trusted</span> Hands!</h2>
                                     <p class="text-xl md:text-2xl text-gray-400 mt-2 mt-md-0">
                                         Join over 10,000 satisfied customers as we craft your vision into a beautifully
@@ -34,9 +35,9 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md mt-4 mt-md-0 my-auto">
+                            <div class="col-12 col-lg mt-4 mt-md-5 mt-lg-0 my-auto">
                                 <div class="row">
-                                    <div class="col-12 col-md-9 mx-auto">
+                                    <div class="col-12 col-lg-9 mx-auto">
                                         <div class="d-flex flex-column gap-4 px-3 px-md-5 py-3 py-md-5 bg-stone-900">
                                             <div>
                                                 <h3 class="text-stone-400 text-lg inter-400">Please share your contact

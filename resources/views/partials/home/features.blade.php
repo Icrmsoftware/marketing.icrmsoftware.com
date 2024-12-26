@@ -1,16 +1,17 @@
 <section class="pt-md-5 pb-md-5" id="features" x-data="{ tab: 'Web Design' }">
     <div class="container py-5 py-md-3">
         <div class="row">
-            <div class="col-12 col-md-9 mx-auto">
-                <div class="text-center mb-8">
+            <div class="col-12 col-lg-9 mx-auto">
+                <div class="text-center mb-8 md:px-10">
                     <h2 class="text-5xl poppins-semibold text-stone-900 px-4 px-md-0">
                         What you will get?
                     </h2>
                     <p class="text-lg text-stone-950 mt-3">Everything you need to launch a high-performing, secure, and scalable website, tailored for your success.</p>
                 </div>
-                <div class="text-center d-flex flex-column flex-md-row gap-4 justify-center">
+                <div class="text-center d-flex flex-row gap-2 gap-lg-4 overflow-auto pb-3 pb-lg-0">
                     <div
                     class="
+                        text-nowrap
                         cursor-pointer
                         text-base inter-600 rounded-5 py-2.5 px-4"
                     :class="tab == 'Web Design'
@@ -23,6 +24,7 @@
 
                     <div
                     class="
+                        text-nowrap
                         cursor-pointer
                         text-base inter-600 rounded-5 py-2.5 px-4"
                     :class="tab == 'Content Management'
@@ -35,6 +37,7 @@
 
                     <div
                     class="
+                        text-nowrap
                         cursor-pointer
                         text-base inter-600 rounded-5 py-2.5 px-4"
                     :class="tab == 'SEO'
@@ -46,6 +49,7 @@
                     </div>
                     <div
                     class="
+                        text-nowrap
                         cursor-pointer
                         text-base inter-600 rounded-5 py-2.5 px-4"
                     :class="tab == 'Security & Hosting'
@@ -57,6 +61,7 @@
                     </div>
                     <div
                     class="
+                        text-nowrap
                         cursor-pointer
                         text-base inter-600 rounded-5 py-2.5 px-4"
                     :class="tab == 'Technology Stack'
@@ -90,10 +95,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-12 col-md my-auto">
+                        <div class="col-12 col-lg my-auto">
                             <div class="row gap-4">
-                                <div class="col-12 bg-violet-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-md-row gap-3">
-                                    <div class="col-12 col-md-5 my-auto">
+                                <div class="col-12 col-md col-lg-12 bg-violet-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-lg-row gap-3">
+                                    <div class="col-12 col-lg-5 my-auto">
                                         <img src="https://images.squarespace-cdn.com/content/v1/5fac4b921ca05f08cb315e40/55ed030e-4255-4db5-9297-312d094c6da4/Squarespace+Web+Designer+%2B+Freelance+Squarespace+Web+Designer+%2B+Squarespace+Web+Design+Packages+%2B+Squarespace+Designer+%2B+Best+Squarespace+Designers+%2B+Squarespace+Website+Designer+%2B+Hire+Squarespace+Designer+%2B+Best+Squarespace+Web+Designers+%2B+Custom+Squarespace+Website+%2B+Squarespace+for+Designers+%2B+Website+Designer+Squarespace%2C+Web+Designer+Squarespace%2C+Squarespace+Web+Developer%2C+squarespace+site+designer"
                                         class="img-fluid"
                                         alt="">
@@ -109,8 +114,8 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 bg-green-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-md-row gap-3">
-                                    <div class="col-12 col-md-5 my-auto">
+                                <div class="col-12 col-md col-lg-12 bg-green-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-lg-row gap-3">
+                                    <div class="col-12 col-lg-5 my-auto">
                                         <img src="https://www.altisinfonet.com/wp-content/uploads/elementor/thumbs/fontend-developer-qalksnrfpsn8sbvycbgz1as8rje3gtgp7mzrvg0we8.png"
                                         class="img-fluid"
                                         alt="">
@@ -133,9 +138,9 @@
                     <div class="row gap-4" x-show="tab == 'Content Management'" x-cloak>
                         <div class="col my-auto">
                             <div class="row row-cols-3 g-4">
-                                <div class="col-12 col-md-6">
-                                    <div class="bg-blue-200 shadow-md rounded-3 relative px-4 pt-3 pb-4">
-                                        <div>
+                                <div class="col-12 col-md-12 col-lg-4">
+                                    <div class="bg-blue-200 shadow-md rounded-3 relative px-4 pt-3 pb-4 d-flex flex-column flex-md-row flex-lg-column gap-md-4 gap-lg-0">
+                                        <div class="col-md-5 col-lg-12">
                                             <img src="{{ Voyager::image('/Images/Features/Content Management/Concrete5_Sc_3.ai_gc 1.png') }}"
                                             class="img-fluid"
                                             alt="">
@@ -152,7 +157,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="bg-pink-200 shadow-md rounded-3 px-4 pt-1 pb-5">
                                         <div class="col-12 my-auto">
                                             <img src="{{ Voyager::image('/Images/Features/Content Management/home-create 1.png') }}"
@@ -171,7 +176,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="bg-purple-200 shadow-md rounded-3 px-4 pt-1 pb-5">
                                         <div class="col-12 my-auto">
                                             <img src="{{ Voyager::image('/Images/Features/Content Management/header-persona-marketing2x_20201013042222_0-1_20201022085813_0 1.png') }}"
@@ -195,7 +200,7 @@
                     </div>
 
                     <div class="row gap-4" x-show="tab == 'SEO'" x-cloak>
-                        <div class="col-12 col-md bg-green-200 shadow-md rounded-3 relative px-4 py-5 py-md-2">
+                        <div class="col-12 col-md bg-green-200 shadow-md rounded-3 relative px-4 py-5 py-md-4">
                             <div>
                                 <img src="https://seranking.com/wp-content/uploads/sites/9/2022/05/why-on-page.png"
                                 class="img-fluid"
@@ -212,7 +217,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-12 col-md my-auto">
+                        <div class="col-12 col-lg my-auto">
                             <div class="row gap-4">
                                 <div class="col-12 bg-violet-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-sm-row">
                                     <div class="col-12 col-md-5 my-auto">
@@ -254,13 +259,13 @@
 
                     <div x-show="tab == 'Security & Hosting'" x-cloak>
                         <div class="row gap-4">
-                            <div class="col-12 col-md bg-teal-200 shadow-md rounded-3 relative px-4 py-4">
+                            <div class="col-12 col-md-12 col-lg bg-teal-200 shadow-md rounded-3 relative px-4 py-4">
                                 <div class="col m-auto">
                                     <img src="{{ Voyager::image('/Images/Features/Security & Hosting/SSL-Certificate 1.png') }}"
                                     class="img-fluid"
                                     alt="">
                                 </div>
-                                <div class="mt-4">
+                                <div class="mt-2 mt-md-0 mt-lg-4">
                                     <h3 class="text-xl poppins-semibold my-2">SSL Certification</h3>
                                     <p class="text-md inter-400">Protect your website and its users with top-notch encryption.</p>
                                     <a data-bs-toggle="offcanvas"
@@ -310,7 +315,7 @@
 
                     <div x-show="tab == 'Technology Stack'" x-cloak>
                         <div class="row row-cols-2 g-4">
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-indigo-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 m-auto">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
@@ -329,7 +334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-green-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto">
                                         <img src="https://raw.githubusercontent.com/livewire/livewire/main/art/readme_logo.png"
@@ -348,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-purple-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto">
                                         <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
@@ -367,7 +372,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-teal-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto py-2">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
@@ -386,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 mx-auto">
+                            <div class="col-12 col-lg-6 mx-auto">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-yellow-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto py-2">
                                         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1200px-JQuery_logo.svg.png"
