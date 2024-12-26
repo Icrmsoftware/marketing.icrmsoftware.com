@@ -27,43 +27,39 @@
                     </h1> --}}
                 </div>
                 <div class="my-auto">
+                    <div class="my-auto d-none d-lg-block">
+                        <ul class="d-flex gap-4 my-auto text-lg text-stone-200 inter-400">
+                            @include('partials.menuitems')
+                        </ul>
+                    </div>
 
-                    <ul class="d-flex gap-4 my-auto text-lg text-stone-200 inter-400">
-                        <li class="my-auto">
-                            <a href="{{ route('welcome') }}#features">
-                                Features
-                            </a>
-                        </li>
-
-                        <li class="my-auto">
-                            <a href="{{ route('welcome') }}#pricing">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="my-auto">
-                            <a href="{{ route('welcome') }}#howitworks">
-                                How it works
-                            </a>
-                        </li>
-
-                        <li class="my-auto">
-                            <a href="{{ route('welcome') }}#faq">
-                                FAQ
-                            </a>
-                        </li>
-                        <li class="my-auto relative">
-                            <a href="/icrm" class="my-auto">
-                                Support
-                            </a>
-                        </li>
-                        <li class="my-auto">
-                            <a data-bs-toggle="offcanvas" data-bs-target="#getStartedCanvas"
-                                aria-controls="getStartedCanvas" onclick="Livewire.dispatch('openGetStartedCanvas')"
-                                class="btn btn-md bg-lime-400 hover:bg-lime-300 text-zinc-950 hover:text-zinc-950 text-uppercase rounded-3 py-2 px-4 text-lg fw-semibold rounded-0">
-                                Get Started
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="my-auto d-block d-md-none">
+                          <div>
+                            <a data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+                                <i class="fa-light fa-bars text-2xl text-stone-400"></i>
+                              </a>
+                          </div>
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                            <div class="offcanvas-header bg-black my-auto">
+                              <div class="my-auto">
+                                <a href="{{ route('welcome') }}">
+                                    <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
+                                        class="img-fluid h-14" alt="">
+                                </a>
+                              </div>
+                              <button type="button" class="btn-close my-auto" data-bs-dismiss="offcanvas" aria-label="Close"
+                              style="color: white !important"
+                              >
+                                <i class="fa fa-times text-2xl"></i>
+                              </button>
+                            </div>
+                            <div class="offcanvas-body bg-black px-4">
+                                <ul class="d-flex flex-column gap-4 my-auto text-lg text-stone-200 inter-400">
+                                    @include('partials.menuitems')
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
 
                 </div>
             </div>

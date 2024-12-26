@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Cta extends Component
 {
-    public $canvas = true;
+    public $canvas = false;
     public $scroll = 53;
     public $expiry_date;
 

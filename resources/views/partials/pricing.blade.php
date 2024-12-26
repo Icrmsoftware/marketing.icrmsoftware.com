@@ -1,19 +1,18 @@
 <section class="py-5 bg-stone-900" id="pricing">
     <div class="container py-4">
         <div class="row">
-            <div class="col-10 mx-auto">
+            <div class="col-12 col-md-10 mx-auto">
                 <div class="row">
-                    <div class="col-8 mx-auto my-auto text-center mb-5">
-                        <h2 class="text-5xl poppins-semibold text-white">
-                            {{-- Transparent Pricing For All --}}
+                    <div class="col-12 col-md-8 mx-auto my-auto text-center mb-5">
+                        <h2 class="text-4xl md:text-5xl poppins-semibold text-white">
                             Know exactly what you’re paying for, no surprises.
                         </h2>
                         <p class="text-gray-400 text-lg mt-3">
                             Keeping everything transparent and clear.
                         </p>
                     </div>
-                    <div class="col-9 mx-auto">
-                        <div class="d-flex gap-3">
+                    <div class="col-12 col-md-9 mx-auto">
+                        <div class="d-flex flex-column flex-sm-row gap-5 gap-sm-4">
                             <div class="col p-4 bg-stone-900 border-solid border-1 border-gray-200 rounded-lg shadow sm:p-8">
                                 <h5 class="mb-4 text-xl font-medium text-gray-400">Startup plan</h5>
                                 <div class="flex items-baseline text-gray-900 dark:text-white">
@@ -226,17 +225,18 @@
 
     </div>
 </section>
-<section class="bg-fuchsia-950 sticky-top">
+<section class="bg-fuchsia-950 sticky-top d-none d-md-block">
     <div class="container">
         <div class="row">
-            <div class="col my-auto py-1">
-                <div class="d-flex gap-4 justify-center">
-                    <div class="my-auto">
-                        <h3 class="text-2xl text-white">
-                            iCommerce has been recognized as a leader across all major review platforms.
+            <div class="col-12 my-auto py-4 py-md-1">
+                <div class="d-flex gap-1 justify-between">
+                    <div class="my-auto text-center">
+                        <h3 class="text-xl md:text-2xl text-white">
+                            <span class="d-none d-md-block">iCommerce has been recognized as a leader across all major review platforms.</span>
+                            <span class="d-block d-md-none">iCommerce has been recognized as a leader.</span>
                         </h3>
                     </div>
-                    <div class="my-auto d-flex gap-4 py-2 justify-center">
+                    <div class="my-auto d-flex gap-1 gap-sm-4 py-2 justify-center">
                         <div>
                             <img src="{{ Voyager::image('/Images/01.png') }}"
                             class="img-fluid h-16 rounded-1"

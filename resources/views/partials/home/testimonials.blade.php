@@ -1,27 +1,27 @@
-<section id="testimonials" class="pt-5 bg-stone-100 rounded-t-xl">
+<section id="testimonials" class="pt-md-5 bg-stone-100 rounded-t-xl">
     <div class="container pt-5 pb-3">
         <div class="row">
             <div class="col">
-                <h2 class="text-5xl poppins-semibold">Don’t take our word for it.</h2>
-                <p class="mt-2.5 text-xl text-stone-700 inter-400">iCommerce web development service score high on review sites and with our customers!</p>
+                <h2 class="text-4xl md:text-5xl poppins-semibold">Don’t take our word for it.</h2>
+                <p class="mt-2.5 text-lg md:text-xl text-stone-700 inter-400">iCommerce web development service score high on review sites and with our customers!</p>
             </div>
         </div>
     </div>
 
     <div class="container-fluid mt-4">
-        <div class="relative overflow-hidden rounded-t-xl">
-            <div>
+        <div class="relative overflow-hidden rounded-t-xl min-h-screens">
+            <div class="d-none d-md-block">
                 <img src="{{ Voyager::image('/Images/Onward and upward with our customers.png') }}"
                     class="img-fluid w-100 shadow" alt="">
             </div>
-            <div class="absolute top-0 left-0 right-0 bottom-0">
-                <div class="row pt-5 pe-4">
-                    <div class="col">
+            <div class="md:absolute top-0 left-0 right-0 bottom-0">
+                <div class="row pt-md-5 pe-md-4">
+                    <div class="col-12 col-md">
 
                     </div>
-                    <div class="col">
-                        <div class="bg-white rounded-t-xl py-5 px-5 min-h-screen shadow">
-                            <h2 class="text-4xl inter-500 text-stone-950" style="line-height: 1.3em;">
+                    <div class="col-12 col-md">
+                        <div class="bg-white rounded-t-xl py-4 py-md-5 px-3 px-md-5 min-h-screen shadow">
+                            <h2 class="text-2xl md:text-4xl inter-500 text-stone-950" style="line-height: 1.3em;">
                                 iCommerce team made the entire process stress-free. From content management to hosting,
                                 everything was handled with professionalism and precision. Excellent job!
                             </h2>
@@ -36,23 +36,23 @@
                                 </div>
                             </div>
 
-                            <div class="d-flex gap-3 py-2 justify-center mt-4">
-                                <div>
+                            <div class="row row-cols-2 row-cols-md-4 py-2 justify-center mt-4">
+                                <div class="col">
                                     <img src="{{ Voyager::image('/Images/01.png') }}"
                                     class="img-fluid"
                                     alt="">
                                 </div>
-                                <div>
+                                <div class="col">
                                     <img src="{{ Voyager::image('/Images/02.png') }}"
                                     class="img-fluid"
                                     alt="">
                                 </div>
-                                <div>
+                                <div class="col">
                                     <img src="{{ Voyager::image('/Images/03.png') }}"
                                     class="img-fluid"
                                     alt="">
                                 </div>
-                                <div>
+                                <div class="col">
                                     <img src="{{ Voyager::image('/Images/04.png') }}"
                                     class="img-fluid"
                                     alt="">
@@ -68,11 +68,11 @@
     <div class="container">
         <div class="py-5">
             <div class="row">
-                <div class="col-7">
-                    <h2 class="text-5xl poppins-semibold">Trusted by 10+ thousands customers around the Asia.</h2>
+                <div class="col-12 col-md-7">
+                    <h2 class="text-3xl md:text-5xl poppins-semibold">Trusted by 10+ thousands customers around the Asia.</h2>
                 </div>
             </div>
-            <div class="row my-5">
+            <div class="row my-4 my-md-5">
                 <div class="owl-carousel testimonials">
                     <div class="d-flex flex-column bg-gray-200 py-4 px-4 rounded-2 shadow-sm">
                         <div class="mt-3 mb-3">

@@ -1,25 +1,25 @@
 <section id="howitworks" class="py-5 bg-white relative" x-data="{ tab: 1 }">
-    <div class="container py-5">
+    <div class="container py-3 py-md-5">
         <div class="row">
-            <div class="col-9 mx-auto">
+            <div class="col-12 col-md-9 mx-auto">
                 <div class="text-center mb-5">
                     <div class="row">
-                        <div class="col-7 mx-auto">
-                            <h2 class="text-5xl poppins-semibold text-stone-900 lh-2">
+                        <div class="col-11 col-md-7 mx-auto">
+                            <h2 class="text-4xl md:text-5xl poppins-semibold text-stone-900 lh-2">
                                 Launch your website in 03 easy steps
                             </h2>
-                            <p class="text-lg text-stone-950 mt-3">
+                            <p class="text-lg text-stone-950 mt-3 px-5 px-md-0">
                                 Bring your vision to life and go live effortlessly.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex gap-5">
-                    <div class="col-2">
-                        <div class="d-flex flex-column gap-4">
+                <div class="d-flex flex-column flex-sm-row gap-4 gap-md-5">
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-row flex-sm-column gap-3 gap-md-4 justify-center">
                             @for ($step = 0; $step < 3; $step++)
                             <div class="
-                            rounded-5 py-3.5 px-2 cursor-pointer
+                            rounded-5 py-3.5 px-4 px-md-2 cursor-pointer
                             text-center my-auto shadow-sm"
                             :class="tab == {{ $step+1 }} ? 'bg-stone-900 text-stone-200 hover:text-purple-400' :
                             'border-solid border-2 hover:bg-stone-100'"

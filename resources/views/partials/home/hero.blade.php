@@ -1,59 +1,48 @@
 <section id="hero" class="bg-white">
-    <div class="container py-5">
-        <div class="d-flex gap-4">
-            <div class="col-span-3 rounded-4
+    <div class="container py-md-5 px-0">
+        <div class="d-flex flex-column flex-md-row gap-sm-4">
+            <div
+                class="col-span-3 md:rounded-xl
             bg-purple-100 shadow-md
-            {{-- border-solid border-1 --}}
             cursor-pointer relative overflow-hidden">
                 <div class="my-auto justify-center">
-                    <div class="d-flex">
-                        <div class="col-8 ps-4 pe-5 py-5">
-                            <h1 class="poppins-semibold text-6xl text-uppercase">
+                    <div class="d-flex flex-column flex-sm-row">
+                        <div class="col-sm-8
+                        ps-md-4 pe-md-5
+                        py-8 px-3
+                        py-md-5">
+                            <h1 class="poppins-semibold text-4xl md:text-6xl text-uppercase">
                                 <span>Web Development</span> Services For Your Revenue Growth
                             </h1>
-                            <h3 class="text-xl ps-2 text-zinc-600 mt-3 mb-2 inter-400">
-                                Your vision, our design expertise. Build a website that not only looks great but works to convert visitors into loyal customers.
+                            <h3 class="text-lg md:text-xl ps-2 text-zinc-600 mt-3 mb-2 inter-400">
+                                Your vision, our design expertise. Build a website that not only looks great but works
+                                to convert visitors into loyal customers.
                             </h3>
                             <div class="d-flex gap-3 mt-4 ms-2">
                                 <div>
-                                    <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')"
-                                    class="btn btn-dark rounded-3 text-lg py-2.5 px-4 font-semibold text-uppercase">
+                                    <a data-bs-toggle="offcanvas" data-bs-target="#getStartedCanvas"
+                                        aria-controls="getStartedCanvas"
+                                        onclick="Livewire.dispatch('openGetStartedCanvas')"
+                                        class="btn btn-dark rounded-3 text-md md:text-lg py-2.5 px-4 font-semibold text-uppercase">
                                         Apply Now
                                     </a>
-                                    <p class="mt-3 text-md text-zinc-500 inter-300">Get Your Free Consultation Today!</p>
+                                    <p class="mt-3 text-md md:text-md text-zinc-500 inter-300">Get Your Free Consultation Today!
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="my-auto">
-                            {{-- <img src="{{ Voyager::image('/Images/original-ccf7358e67c02f6c2b8b2aae66554e49-removebg-preview.png') }}"
-                            class="img-fluid"
-                            alt=""> --}}
-                            {{-- <img src="https://irp-cdn.multiscreensite.com/dbd32b89/import/clib/maingoesbig_com/dms3rep/multi/Responsive+Website+Builder.gif"
-                            class="img-fluid"
-                            alt="Web Design Services For Your Revenue Growth"> --}}
-                            {{-- <img src="https://cdn.dribbble.com/users/14373931/screenshots/20229892/media/2916c362ae81f1f7fafbbe12f59cd8dc.gif"
-                            class="img-fluid"
-                            alt=""> --}}
-                            {{-- <img src="https://www.zohowebstatic.com/sites/zweb/images/creator/functions/switch-to-zcreator-illustration.png"
-                            class="img-fluid"
-                            alt=""> --}}
-                            {{-- <img src="https://icommerce.co.in//storage/icrm/usps/ezgif-5-2bc355c60b.webp"
-                            class="img-fluid"
-                            alt=""> --}}
                             <img src="https://cdn.prod.website-files.com/5d816b07d269385f68dbcab0/60f6ec4d104e8f554cf58781_greg-gunn-illustration-for-designers-3-start-illustrating-1080x1080-min.png"
-                            class="img-fluid"
-                            alt="">
+                                class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 bg-stone-950 rounded-4 overflow-hidden justify-content-center shadow flex items-center">
+            <div class="col-sm-3 bg-stone-950 md:rounded-xl overflow-hidden justify-content-center shadow flex items-center">
                 <div class="my-auto px-4 py-4">
                     <div class="d-flex mb-3">
-                        <div class="border-solid border-1 border-store-200
+                        <div
+                            class="border-solid border-1 border-store-200
                         bg-purple-300 text-stone-950
                         py-0 px-3
                         rounded-2
@@ -61,8 +50,7 @@
                             <div class="d-flex my-auto">
                                 <div class="my-auto">
                                     <img src="https://media1.giphy.com/media/C8QrVDET9w1NFgoRfj/giphy.gif"
-                                    class="img-fluid h-10"
-                                    alt="">
+                                        class="img-fluid h-10" alt="">
                                 </div>
                                 <div class="my-auto">
                                     Helpdesk Support
@@ -71,19 +59,18 @@
                         </div>
                     </div>
                     <h2 class="text-white text-3xl poppins-medium">
-                        Get Free Consultation
+                        {{-- Get Free Consultation --}}
+                        {{-- Need Help? --}}
+                        Existing User?
                     </h2>
                     <p class="text-gray-300 text-base font-normal my-1">
-                        Our experts will guide you with the step by step process to successfully launch your website.
+                        If you need help optimizing your website, we're just a message away to assist you!
                     </p>
 
                     <div class="mt-4">
-                        <a
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#getStartedCanvas"
-                        aria-controls="getStartedCanvas"
-                        onclick="Livewire.dispatch('openGetStartedCanvas')"
-                        class="btn btn-lg
+                        <a data-bs-toggle="offcanvas" data-bs-target="#getStartedCanvas"
+                            aria-controls="getStartedCanvas" onclick="Livewire.dispatch('openGetStartedCanvas')"
+                            class="btn btn-lg
                         border-solid border-1
                         {{-- bg-lime-400 hover:bg-lime-300 text-zinc-950 --}}
                         bg-stone-50 hover:bg-lime-400 text-zinc-950
@@ -95,7 +82,7 @@
                         </a>
                     </div>
                     <p class="text-gray-300 text-sm inter-300 font-normal mt-3">
-                        Support available 24x7 in IST timezone
+                        Support available 24x7
                     </p>
                 </div>
             </div>

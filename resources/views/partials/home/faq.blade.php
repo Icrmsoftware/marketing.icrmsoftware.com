@@ -1,26 +1,26 @@
 <section id="faq" class="py-5 bg-stone-900">
-    <div class="container py-5">
+    <div class="container py-3 py-md-5">
         <div class="row">
-            <div class="col-10 mx-auto">
-                <div class="text-center mb-5">
-                    <h2 class="text-5xl poppins-semibold text-white lh-2">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="text-center mb-4 mb-md-5">
+                    <h2 class="text-4xl md:text-5xl poppins-semibold text-white lh-2">
                         Got Questions? We’ve Got Answers!
                     </h2>
-                    <p class="text-lg text-gray-400 mt-3">
+                    <p class="text-md md:text-lg text-gray-400 mt-2 mt-md-3">
                         Find quick answers to the most common questions about our website design services.
                     </p>
                 </div>
 
                 <div>
                     <div class="row">
-                        <div class="col-8 mx-auto" x-data="{ faq: 1 }">
+                        <div class="col-12 col-md-8 mx-auto" x-data="{ faq: 1 }">
 
                             <div class="py-3 px-3" @click.prevent="faq = 1">
                                 <div class="pt-3 pb-3 cursor-pointer"
                                     :class="faq == 1 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q1: How long does it take to design and launch a website?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q1: How long does it take to design and launch a website?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 1" x-cloak></i>
@@ -38,7 +38,7 @@
                                     :class="faq == 2 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q2: Will my website be mobile-friendly?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q2: Will my website be mobile-friendly?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 2" x-cloak></i>
@@ -56,7 +56,7 @@
                                     :class="faq == 3 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q3: Do you provide hosting and domain services?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q3: Do you provide hosting and domain services?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 3" x-cloak></i>
@@ -74,7 +74,7 @@
                                     :class="faq == 4 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q4: Can I update my website after it’s live?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q4: Can I update my website after it’s live?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 4" x-cloak></i>
@@ -92,7 +92,7 @@
                                     :class="faq == 5 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q5: What is included in the SEO setup?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q5: What is included in the SEO setup?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 5" x-cloak></i>
@@ -110,7 +110,7 @@
                                     :class="faq == 6 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q6: How much does a website cost?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q6: How much does a website cost?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 6" x-cloak></i>
@@ -128,7 +128,7 @@
                                     :class="faq == 7 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q7: Do you offer ongoing support after the website launch?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q7: Do you offer ongoing support after the website launch?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 7" x-cloak></i>
@@ -146,7 +146,7 @@
                                     :class="faq == 8 ? 'bg-fuchsia-900' : 'bg-stone-800 border-b hover:bg-stone-700'">
                                     <div class="d-flex justify-between">
                                         <div class="px-3">
-                                            <h3 class="text-slate-100 text-xl">Q8: What if I don’t have content for my website?</h3>
+                                            <h3 class="text-slate-100 text-lg md:text-xl">Q8: What if I don’t have content for my website?</h3>
                                         </div>
                                         <div class="text-stone-200 pe-3">
                                             <i class="fa-regular fa-chevron-down" x-show="faq == 8" x-cloak></i>
