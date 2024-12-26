@@ -5,35 +5,15 @@ namespace App\Livewire;
 use App\Lead;
 use Livewire\Component;
 
-class Cta extends Component
+class Getstarted extends Component
 {
-    public $canvas = true;
-    public $scroll = 53;
+    public $canvas = false;
+
+    public $name, $mobile, $email;
+
     public $expiry_date;
+    protected $listeners = ['openGetStartedCanvas' => 'openGetStartedCanvas'];
 
-    public $name, $mobile;
-
-    // Ensure the listener method is correctly set
-    protected $listeners = [
-        'showCanvas',
-        'hideCanvas',
-        'openOfferCanvas',
-    ];
-
-
-    protected function queryString()
-    {
-        return [
-            'canvas' => [
-                'as' => 'o',
-            ],
-        ];
-    }
-
-    public function openOfferCanvas()
-    {
-        $this->canvas = true;
-    }
     public function mount()
     {
         $this->canvas = false;
@@ -67,14 +47,24 @@ class Cta extends Component
         return 'th';
     }
 
-    public function showCanvas()
+    public function openGetStartedCanvas()
     {
         $this->canvas = true;
     }
 
-    public function hideCanvas()
+    public function closeGetStartedCanvas()
     {
         $this->canvas = false;
+        $this->reset('canvas');
+    }
+
+    protected function queryString()
+    {
+        return [
+            'canvas' => [
+                'as' => 'gs',
+            ],
+        ];
     }
 
     public function rules()
@@ -82,6 +72,7 @@ class Cta extends Component
         return [
             'name' => 'required',
             'mobile' => 'required|digits:10',
+            'email' => 'nullable|email'
         ];
     }
 
@@ -92,6 +83,7 @@ class Cta extends Component
         $lead = new Lead();
         $lead->name = $this->name;
         $lead->mobile = $this->mobile;
+        $lead->email = $this->email;
         $lead->save();
 
         return redirect()->route('welcome')->with([
@@ -99,9 +91,8 @@ class Cta extends Component
             'alert-type' => 'success',
         ]);
     }
-
     public function render()
     {
-        return view('livewire.cta');
+        return view('livewire.getstarted');
     }
 }

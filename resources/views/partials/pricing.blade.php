@@ -19,7 +19,7 @@
                                 <div class="flex items-baseline text-gray-900 dark:text-white">
                                     <span class="text-3xl font-semibold">₹</span>
                                     <span class="text-5xl font-extrabold tracking-tight">25,000</span>
-                                    <span class="ms-1 text-xl font-normal text-gray-400">/Lifetime</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-400">/One-time</span>
                                 </div>
                                 <ul role="list" class="space-y-5 my-7">
                                     <li class="flex items-center">
@@ -100,18 +100,22 @@
                                 data-bs-toggle="offcanvas"
                                 data-bs-target="#getStartedCanvas"
                                 aria-controls="getStartedCanvas"
+                                onclick="Livewire.dispatch('openGetStartedCanvas')"
                                     class="text-white bg-fuchsia-700 hover:bg-lime-500
                                     focus:ring-4 focus:outline-none focus:ring-blue-200
                                     font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Choose
                                     plan</button>
+                                <div class="flex items-baseline text-gray-900 dark:text-white my-2">
+                                    <span class="ms-1 text-md font-normal text-gray-400">₹3,000/- Annual Web Hosting Renewal Fee</span>
+                                </div>
                             </div>
                             <div class="col p-4 bg-stone-900 border border-gray-200 rounded-lg shadow sm:p-8">
                                 <h5 class="mb-4 text-xl font-medium text-gray-400">Enterprise plan</h5>
                                 <div class="flex items-baseline text-gray-900 dark:text-white">
                                     <span class="text-3xl font-semibold">₹</span>
                                     <span class="text-5xl font-extrabold tracking-tight">35,000</span>
-                                    <span class="ms-1 text-xl font-normal text-gray-400">/Lifetime</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-400">/One-time</span>
                                 </div>
                                 <ul role="list" class="space-y-5 my-7">
                                     <li class="flex items-center">
@@ -192,11 +196,15 @@
                                 data-bs-toggle="offcanvas"
                                 data-bs-target="#getStartedCanvas"
                                 aria-controls="getStartedCanvas"
+                                onclick="Livewire.dispatch('openGetStartedCanvas')"
                                     class="text-white bg-fuchsia-700 hover:bg-lime-500
                                     focus:ring-4 focus:outline-none focus:ring-blue-200
                                     font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Choose
                                     plan</button>
+                                <div class="flex items-baseline text-gray-900 dark:text-white my-2">
+                                    <span class="ms-1 text-md font-normal text-gray-400">₹3,000/- Annual Web Hosting Renewal Fee</span>
+                                </div>
                             </div>
                         </div>
 
@@ -206,6 +214,7 @@
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offerCanvas"
                             aria-controls="offerCanvas"
+                            onclick="Livewire.dispatch('openOfferCanvas')"
                              class="text-center text-stone-400 cursor-pointer">
                                 <h3>Avail exclusive discounts on our services by <u class="text-fuchsia-400">clicking here</u></h3>
                             </a>
@@ -215,5 +224,42 @@
             </div>
         </div>
 
+    </div>
+</section>
+<section class="bg-fuchsia-950 sticky-top">
+    <div class="container">
+        <div class="row">
+            <div class="col my-auto py-1">
+                <div class="d-flex gap-4 justify-center">
+                    <div class="my-auto">
+                        <h3 class="text-2xl text-white">
+                            iCommerce has been recognized as a leader across all major review platforms.
+                        </h3>
+                    </div>
+                    <div class="my-auto d-flex gap-4 py-2 justify-center">
+                        <div>
+                            <img src="{{ Voyager::image('/Images/01.png') }}"
+                            class="img-fluid h-16 rounded-1"
+                            alt="">
+                        </div>
+                        <div>
+                            <img src="{{ Voyager::image('/Images/02.png') }}"
+                            class="img-fluid h-16 rounded-1"
+                            alt="">
+                        </div>
+                        <div>
+                            <img src="{{ Voyager::image('/Images/03.png') }}"
+                            class="img-fluid h-16 rounded-1"
+                            alt="">
+                        </div>
+                        <div>
+                            <img src="{{ Voyager::image('/Images/04.png') }}"
+                            class="img-fluid h-16 rounded-1"
+                            alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

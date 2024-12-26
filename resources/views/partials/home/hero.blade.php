@@ -18,7 +18,9 @@
                                 <div>
                                     <a data-bs-toggle="offcanvas"
                                     data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas" class="btn btn-dark rounded-3 text-lg py-2.5 px-4 font-semibold text-uppercase">
+                                    aria-controls="getStartedCanvas"
+                                    onclick="Livewire.dispatch('openGetStartedCanvas')"
+                                    class="btn btn-dark rounded-3 text-lg py-2.5 px-4 font-semibold text-uppercase">
                                         Apply Now
                                     </a>
                                     <p class="mt-3 text-md text-zinc-500 inter-300">Get Your Free Consultation Today!</p>
@@ -80,6 +82,7 @@
                         data-bs-toggle="offcanvas"
                         data-bs-target="#getStartedCanvas"
                         aria-controls="getStartedCanvas"
+                        onclick="Livewire.dispatch('openGetStartedCanvas')"
                         class="btn btn-lg
                         border-solid border-1
                         {{-- bg-lime-400 hover:bg-lime-300 text-zinc-950 --}}
@@ -88,7 +91,7 @@
                         inter-500 text-base
                         ">
                             <i class="fa-light fa-phone-volume me-2"></i>
-                            Schedule a call
+                            Request a call
                         </a>
                     </div>
                     <p class="text-gray-300 text-sm inter-300 font-normal mt-3">

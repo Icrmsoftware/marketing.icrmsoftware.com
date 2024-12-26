@@ -1,8 +1,9 @@
 <section id="testimonials" class="pt-5 bg-stone-100 rounded-t-xl">
     <div class="container pt-5 pb-3">
         <div class="row">
-            <div class="col-6">
-                <h2 class="text-5xl poppins-semibold">Onward and upward with our customers.</h2>
+            <div class="col">
+                <h2 class="text-5xl poppins-semibold">Don’t take our word for it.</h2>
+                <p class="mt-2.5 text-xl text-stone-700 inter-400">iCommerce web development service score high on review sites and with our customers!</p>
             </div>
         </div>
     </div>
@@ -19,19 +20,42 @@
 
                     </div>
                     <div class="col">
-                        <div class="bg-fuchsia-800 rounded-t-xl py-5 px-5 min-h-screen">
-                            <h2 class="text-4xl inter-500 text-stone-100" style="line-height: 1.3em;">
+                        <div class="bg-white rounded-t-xl py-5 px-5 min-h-screen shadow">
+                            <h2 class="text-4xl inter-500 text-stone-950" style="line-height: 1.3em;">
                                 iCommerce team made the entire process stress-free. From content management to hosting,
                                 everything was handled with professionalism and precision. Excellent job!
                             </h2>
                             <div class="mt-4">
-                                <p class="text-lg text-stone-100">– Priya Singh, COO, EduLearn</p>
+                                <p class="text-lg text-stone-950">– Priya Singh, COO</p>
                                 <div class="d-flex gap-2 mt-3">
                                     @for ($star = 0; $star < 5; $star++)
                                         <div>
                                             <i class="fa fa-star text-amber-300 text-lg"></i>
                                         </div>
                                     @endfor
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 py-2 justify-center mt-4">
+                                <div>
+                                    <img src="{{ Voyager::image('/Images/01.png') }}"
+                                    class="img-fluid"
+                                    alt="">
+                                </div>
+                                <div>
+                                    <img src="{{ Voyager::image('/Images/02.png') }}"
+                                    class="img-fluid"
+                                    alt="">
+                                </div>
+                                <div>
+                                    <img src="{{ Voyager::image('/Images/03.png') }}"
+                                    class="img-fluid"
+                                    alt="">
+                                </div>
+                                <div>
+                                    <img src="{{ Voyager::image('/Images/04.png') }}"
+                                    class="img-fluid"
+                                    alt="">
                                 </div>
                             </div>
                         </div>

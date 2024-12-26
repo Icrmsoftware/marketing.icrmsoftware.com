@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                                 <div x-show="faq == 6" x-cloak class="py-4 px-3 bg-stone-800 text-gray-300">
-                                    <p class="text-lg mt-2">Pricing depends on your requirements. We offer transparent pricing with packages starting at ₹25,000 for a lifetime plan.</p>
+                                    <p class="text-lg mt-2">Pricing depends on your requirements. We offer transparent pricing with packages starting at ₹25,000 for a one-time plan.</p>
                                 </div>
                             </div>
 

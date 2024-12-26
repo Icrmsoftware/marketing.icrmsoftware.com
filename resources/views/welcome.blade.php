@@ -11,6 +11,9 @@
 
 @include('partials.pricing')
 @include('partials.home.testimonials')
+
+
+
 @include('partials.home.howitworks')
 
 
@@ -18,7 +21,7 @@
 @include('partials.home.faq')
 @livewire('cta')
 
-@include('partials.getstarted')
+@livewire('getstarted')
 
 
 

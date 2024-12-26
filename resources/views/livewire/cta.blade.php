@@ -1,5 +1,5 @@
 <div>
-    <div class="offcanvas offcanvas-bottom bg-slate-950 mx-10 max-w-6xl m-auto"
+    <div class="offcanvas offcanvas-bottom bg-stone-950 mx-10 max-w-6xl m-auto {{ $canvas ? 'show' : '' }}"
     style="min-height: 100%;"
     data-bs-scroll="true"
     data-bs-backdrop="true"
@@ -19,12 +19,16 @@
 
             <div class="container py-3">
                 <div class="row">
-                    <div class="col-12 my-auto text-center">
+                    <div class="col-12 my-auto mx-auto text-center">
+                        <div class="mx-auto mb-3">
+                            <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
+                                    class="img-fluid h-14 mx-auto" alt="">
+                        </div>
                         <h2 class="text-fuchsia-500 poppins-semibold text-5xl text-uppercase">
-                            Avail 30% off + Free Content Writing
+                            Exclusive 30% Discount
                         </h2>
-                        <p class="text-gray-200 text-2xl my-3">Sign up before 31st December 2024 and enjoy an exclusive
-                            discount on our services.</p>
+                        <p class="text-gray-200 text-2xl my-3">Sign up before {{ $expiry_date }} and enjoy an exclusive
+                            30% discount on our services.</p>
 
                         <div class="row mt-5">
                             <div class="col-8 mx-auto">
@@ -56,20 +60,26 @@
                                 <div class="mt-5 mb-3">
                                     <h4 class="text-amber-400 inter-500 text-2xl animate-bounce">Claim Your Offer Now!</h4>
                                 </div>
-                                <div class="d-flex gap-4 justify-center">
-                                    <div>
-                                        <input type="text" class="form-control py-3" placeholder="Your name">
+                                <form wire:submit.prevent='submitlead'>
+                                    <div class="d-flex gap-4 justify-center">
+                                        <div>
+                                            <input type="text" class="form-control py-3 @error('name') bg-rose-200 border-danger border-3 @enderror" placeholder="Your name"
+                                            wire:model.live='name'
+                                            >
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control py-3 @error('mobile') bg-rose-200 border-danger border-3 @enderror" placeholder="Contact number"
+                                            wire:model.live='mobile'
+                                            >
+                                        </div>
+                                        <div>
+                                            <button type="submit"
+                                                class="btn h-100 px-4 rounded-1 py-2.5 bg-fuchsia-700 hover:bg-fuchsia-500 text-white text-uppercase font-semibold pt-3">
+                                                Apply Now
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input type="text" class="form-control py-3" placeholder="Contact number">
-                                    </div>
-                                    <div>
-                                        <a href="#"
-                                            class="btn h-100 px-4 rounded-1 py-2.5 bg-fuchsia-700 hover:bg-fuchsia-500 text-white text-uppercase font-semibold pt-3">
-                                            Apply Now
-                                        </a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -97,6 +107,7 @@
             // Show the offcanvas if the user has scrolled 75% and it hasn't been shown before
             if (scrollPosition >= 0.70 && !canvasShown) {
                 ctaElement.classList.add("show");
+                Livewire.dispatch('showCanvas');
                 canvasShown = true; // Update the flag to prevent showing again
             }
         });
@@ -105,6 +116,7 @@
         document.getElementById("closeCanvas").addEventListener("click", function () {
             const ctaElement = document.getElementById("offerCanvas");
             ctaElement.classList.remove("show");
+            Livewire.dispatch('hideCanvas');
         });
     });
 </script>
