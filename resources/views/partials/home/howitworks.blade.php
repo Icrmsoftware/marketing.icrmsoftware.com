@@ -52,7 +52,7 @@
                             <div class="mt-4">
                                 <img src="{{ Voyager::image('/Images/bruce-mars-FWVMhUa_wbY-unsplash.jpg') }}"
                                 class="img-fluid rounded-3 h-100"
-                                alt="Tell Us What You Need">
+                                alt="Watch Your Website Take Shape">
                             </div>
                         </div>
 
@@ -62,7 +62,7 @@
                             <div class="mt-4">
                                 <img src="{{ Voyager::image('/Images/magnet-me-315vPGsAFUk-unsplash.jpg') }}"
                                 class="img-fluid rounded-3 h-100"
-                                alt="Tell Us What You Need">
+                                alt="Launch and Grow Together">
                             </div>
                         </div>
                     </div>

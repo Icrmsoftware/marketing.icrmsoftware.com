@@ -1,9 +1,9 @@
 <section id="footer" class="py-3">
     <div class="container">
         <div class="d-flex justify-between">
-            <div class="text-lg">
+            <div class="text-md md:text-lg">
                 <a href="https://icrmsoftware.com">
-                    @ 2025 ICRM Software Pvt Ltd
+                    @ {{  date("Y") }} ICRM Software Pvt Ltd
                 </a>
             </div>
             <div>

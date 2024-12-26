@@ -1,5 +1,6 @@
 @extends('voyager::auth.master')
 
+
 @section('content')
     <div class="login-container">
 

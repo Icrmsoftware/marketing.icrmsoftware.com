@@ -20,11 +20,14 @@
                             </h3>
                             <div class="d-flex gap-3 mt-4 ms-2">
                                 <div>
-                                    <a data-bs-toggle="offcanvas" data-bs-target="#getStartedCanvas"
+                                    <a
+                                        href="#features"
+                                        {{-- data-bs-toggle="offcanvas"
+                                        data-bs-target="#getStartedCanvas"
                                         aria-controls="getStartedCanvas"
-                                        onclick="Livewire.dispatch('openGetStartedCanvas')"
+                                        onclick="Livewire.dispatch('openGetStartedCanvas')" --}}
                                         class="btn btn-dark rounded-3 text-lg lg:text-lg py-2.5 px-4 font-semibold text-uppercase">
-                                        Apply Now
+                                        Learn More
                                     </a>
                                     <p class="mt-3 text-lg lg:text-lg text-zinc-500 inter-300">Get Your Free Consultation Today!
                                     </p>
@@ -32,8 +35,8 @@
                             </div>
                         </div>
                         <div class="my-auto">
-                            <img src="https://cdn.prod.website-files.com/5d816b07d269385f68dbcab0/60f6ec4d104e8f554cf58781_greg-gunn-illustration-for-designers-3-start-illustrating-1080x1080-min.png"
-                                class="img-fluid" alt="">
+                            <img src="{{ Voyager::image('/Images/Web Development Services For Your Revenue Growth.png') }}"
+                                class="img-fluid" alt="Web Development Services For Your Revenue Growth">
                         </div>
                     </div>
                 </div>
@@ -49,8 +52,8 @@
                         text-lg font-semibold">
                             <div class="d-flex my-auto">
                                 <div class="my-auto">
-                                    <img src="https://media1.giphy.com/media/C8QrVDET9w1NFgoRfj/giphy.gif"
-                                        class="img-fluid h-10" alt="">
+                                    <img src="{{ Voyager::image('/Images/help-desk-support.gif') }}"
+                                        class="img-fluid h-10" alt="iCommerce - Helpdesk Support">
                                 </div>
                                 <div class="my-auto">
                                     Helpdesk Support

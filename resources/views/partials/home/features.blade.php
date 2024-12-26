@@ -79,7 +79,7 @@
                     <div class="row gap-4" x-show="tab == 'Web Design'" x-cloak>
                         <div class="col-12 col-md bg-blue-200 shadow-md rounded-3 relative px-4 py-4">
                             <div>
-                                <img src="https://miro.medium.com/v2/resize:fit:1155/1*ePAhjWouJdh8SRKEiXcmsA.png"
+                                <img src="{{ Voyager::image('/Images/Features/Web Design/Responsive Designs for All Devices.png') }}"
                                 class="img-fluid"
                                 alt="">
                             </div>
@@ -99,7 +99,7 @@
                             <div class="row gap-4">
                                 <div class="col-12 col-md col-lg-12 bg-violet-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-lg-row gap-3">
                                     <div class="col-12 col-lg-5 my-auto">
-                                        <img src="https://images.squarespace-cdn.com/content/v1/5fac4b921ca05f08cb315e40/55ed030e-4255-4db5-9297-312d094c6da4/Squarespace+Web+Designer+%2B+Freelance+Squarespace+Web+Designer+%2B+Squarespace+Web+Design+Packages+%2B+Squarespace+Designer+%2B+Best+Squarespace+Designers+%2B+Squarespace+Website+Designer+%2B+Hire+Squarespace+Designer+%2B+Best+Squarespace+Web+Designers+%2B+Custom+Squarespace+Website+%2B+Squarespace+for+Designers+%2B+Website+Designer+Squarespace%2C+Web+Designer+Squarespace%2C+Squarespace+Web+Developer%2C+squarespace+site+designer"
+                                        <img src="{{ Voyager::image('/Images/Features/Web Design/Custom Layouts Aligned with Your Brand.png') }}"
                                         class="img-fluid"
                                         alt="">
                                     </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="col-12 col-md col-lg-12 bg-green-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-lg-row gap-3">
                                     <div class="col-12 col-lg-5 my-auto">
-                                        <img src="https://www.altisinfonet.com/wp-content/uploads/elementor/thumbs/fontend-developer-qalksnrfpsn8sbvycbgz1as8rje3gtgp7mzrvg0we8.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Web Design/Fast-Loading, Sleek Interfaces.png') }}"
                                         class="img-fluid"
                                         alt="">
                                     </div>
@@ -202,7 +202,7 @@
                     <div class="row gap-4" x-show="tab == 'SEO'" x-cloak>
                         <div class="col-12 col-md bg-green-200 shadow-md rounded-3 relative px-4 py-5 py-md-4">
                             <div>
-                                <img src="https://seranking.com/wp-content/uploads/sites/9/2022/05/why-on-page.png"
+                                <img src="{{ Voyager::image('/Images/Features/SEO/Basic SEO Setup.webp') }}"
                                 class="img-fluid"
                                 alt="">
                             </div>
@@ -221,7 +221,7 @@
                             <div class="row gap-4">
                                 <div class="col-12 bg-violet-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-sm-row">
                                     <div class="col-12 col-md-5 my-auto">
-                                        <img src="https://replug.io/_next/image?url=%2Fassets%2Fimages%2Ftools%2Fmeta-tags-generator%2F1.png&w=3840&q=75"
+                                        <img src="{{ Voyager::image('/Images/Features/SEO/Optimized Meta Tags and Keywords.png') }}"
                                         class="img-fluid"
                                         alt="">
                                     </div>
@@ -238,7 +238,7 @@
                                 </div>
                                 <div class="col-12 bg-blue-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-sm-row">
                                     <div class="col-12 col-md-5 my-auto py-2">
-                                        <img src="https://www.seoptimer.com/frontend-new/images/pages/index_en.png"
+                                        <img src="{{ Voyager::image('/Images/Features/SEO/Performance Tracking.png') }}"
                                         class="img-fluid"
                                         alt="">
                                     </div>
@@ -318,9 +318,9 @@
                             <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-indigo-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 m-auto">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Technology Stack/Laravel Framework.png') }}"
                                              class="img-fluid px-5"
-                                             alt="Laravel Logo">
+                                             alt="Laravel Framework">
                                     </div>
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold my-2">Laravel Framework</h3>
@@ -337,7 +337,7 @@
                             <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-green-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto">
-                                        <img src="https://raw.githubusercontent.com/livewire/livewire/main/art/readme_logo.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Technology Stack/Livewire Components.png') }}"
                                              class="img-fluid"
                                              alt="Livewire Logo">
                                     </div>
@@ -356,7 +356,7 @@
                             <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-purple-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto">
-                                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Technology Stack/Bootstrap Framework.png') }}"
                                              class="img-fluid"
                                              alt="Bootstrap Logo">
                                     </div>
@@ -375,7 +375,7 @@
                             <div class="col-12 col-lg-6">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-teal-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto py-2">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Technology Stack/Tailwind CSS.png') }}"
                                              class="img-fluid py-2.5"
                                              alt="Tailwind CSS Logo">
                                     </div>
@@ -394,7 +394,7 @@
                             <div class="col-12 col-lg-6 mx-auto">
                                 <div class="d-flex gap-4 flex-column flex-sm-row bg-yellow-200 shadow-md rounded-3 px-4 py-5">
                                     <div class="col-12 col-md-4 my-auto py-2">
-                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1200px-JQuery_logo.svg.png"
+                                        <img src="{{ Voyager::image('/Images/Features/Technology Stack/jQuery Library.png') }}"
                                              class="img-fluid"
                                              alt="jQuery Logo">
                                     </div>

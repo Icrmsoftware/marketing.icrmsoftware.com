@@ -22,7 +22,7 @@
                     <div class="col-12 my-auto mx-auto text-center">
                         <div class="mx-auto mb-3">
                             <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
-                                    class="img-fluid h-14 md:h-20 mx-auto" alt="">
+                                    class="img-fluid h-14 md:h-20 mx-auto" alt="iCommerce Logo">
                         </div>
                         <h2 class="text-fuchsia-500 poppins-semibold text-4xl md:text-5xl text-uppercase">
                             Exclusive 30% Discount

@@ -9,6 +9,10 @@
     </div>
 
     <div class="container-fluid px-0 mt-4">
+        <div class="d-block d-md-none">
+            <img src="{{ Voyager::image('/Images/Frame 418.png') }}"
+                class="img-fluid w-100 shadow" alt="">
+        </div>
         <div class="relative overflow-hidden rounded-t-xl min-h-screens">
             <div class="d-none d-lg-block">
                 <img src="{{ Voyager::image('/Images/Frame 417_2.png') }}"

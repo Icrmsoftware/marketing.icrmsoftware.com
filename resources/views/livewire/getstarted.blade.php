@@ -24,7 +24,7 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                             <div class="col-12 col-lg my-auto">
                                 <div class="mb-3 mb-lg-5 d-none d-lg-block">
                                     <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
-                                        class="img-fluid h-14 md:h-16 lg:h-20" alt="">
+                                        class="img-fluid h-14 md:h-16 lg:h-20" alt="iCommerce Logo">
                                 </div>
                                 <div>
                                     <h2 class="text-5xl md:text-8xl lg:text-8xl text-white poppins-semibold">You're in <span
