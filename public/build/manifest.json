@@ -1,6 +1,11 @@
 {
+  "public/css/icrm.css": {
+    "file": "assets/icrm-BGMKXtzf.css",
+    "src": "public/css/icrm.css",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-ByOuZ2Yo.css",
+    "file": "assets/app-BibXP9Jz.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
