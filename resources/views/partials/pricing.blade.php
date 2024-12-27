@@ -11,14 +11,15 @@
                             Keeping everything transparent and clear.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-9 mx-auto">
+                    <div class="col-12 col-lg-12 mx-auto">
                         <div class="d-flex flex-column flex-sm-row gap-5 gap-sm-4">
+                            @foreach (config('icrm.pricing') as $plan)
                             <div class="col p-4 bg-stone-900 border-solid border-1 border-gray-200 rounded-lg shadow sm:p-8">
-                                <h5 class="mb-4 text-xl font-medium text-gray-400">Startup plan</h5>
+                                <h5 class="mb-4 text-xl font-medium text-gray-400">{{ $plan['name'] }}</h5>
                                 <div class="flex items-baseline text-gray-900 dark:text-white">
                                     <span class="text-3xl font-semibold">₹</span>
-                                    <span class="text-5xl font-extrabold tracking-tight">25,000</span>
-                                    <span class="ms-1 text-xl font-normal text-gray-400">/One-time</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">{{number_format($plan['mrp'] * ( 100 - $plan['discount']) / 100) }}</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-400 line-through">₹{{number_format($plan['mrp']) }}</span>
                                 </div>
                                 <ul role="list" class="space-y-5 my-7">
                                     <li class="flex items-center">
@@ -28,9 +29,21 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Upto 15 web pages
+                                            One-time charges
                                         </span>
                                     </li>
+
+                                    <li class="flex items-center">
+                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
+                                            Upto {{ $plan['pages'] }} web pages
+                                        </span>
+                                    </li>
+
                                     <li class="flex">
                                         <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -41,17 +54,34 @@
                                             Content management system
                                         </span>
                                     </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
+
+                                    <li class="flex @if ($plan['analytics'] === 0) line-through opacity-50 @endif decoration-gray-500">
+                                        <svg class="flex-shrink-0 w-4 h-4 @if ($plan['analytics'] === 0) text-gray-400 @else text-lime-400 @endif" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Email integration
-                                        </span>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">Google Analytics</span>
                                     </li>
+
+                                    <li class="flex @if ($plan['chat'] === 0) line-through opacity-50 @endif decoration-gray-500">
+                                        <svg class="flex-shrink-0 w-4 h-4 @if ($plan['chat'] === 0) text-gray-400 @else text-lime-400 @endif" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">Real-time chatbot</span>
+                                    </li>
+
+                                    <li class="flex @if ($plan['email'] === 0) line-through opacity-50 @endif decoration-gray-500">
+                                        <svg class="flex-shrink-0 w-4 h-4 @if ($plan['email'] === 0) text-gray-400 @else text-lime-400 @endif" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">Email integration</span>
+                                    </li>
+
                                     <li class="flex">
                                         <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -86,14 +116,7 @@
                                             One-time revision included
                                         </span>
                                     </li>
-                                    {{-- <li class="flex line-through decoration-gray-500">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">API Access</span>
-                                    </li> --}}
+
                                 </ul>
                                 <button type="button"
                                 data-bs-toggle="offcanvas"
@@ -109,102 +132,7 @@
                                     <span class="ms-1 text-md font-normal text-gray-400">₹3,000/- Annual Web Hosting Renewal Fee</span>
                                 </div>
                             </div>
-                            <div class="col p-4 bg-stone-900 border border-gray-200 rounded-lg shadow sm:p-8">
-                                <h5 class="mb-4 text-xl font-medium text-gray-400">Enterprise plan</h5>
-                                <div class="flex items-baseline text-gray-900 dark:text-white">
-                                    <span class="text-3xl font-semibold">₹</span>
-                                    <span class="text-5xl font-extrabold tracking-tight">35,000</span>
-                                    <span class="ms-1 text-xl font-normal text-gray-400">/One-time</span>
-                                </div>
-                                <ul role="list" class="space-y-5 my-7">
-                                    <li class="flex items-center">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Upto 25 web pages
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Content management system
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Email integration
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Basic SEO setup
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Mobile-friendly design
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Fast-loading pages
-                                        </span>
-                                    </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            Two-time revision included
-                                        </span>
-                                    </li>
-                                    {{-- <li class="flex line-through decoration-gray-500">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">API Access</span>
-                                    </li> --}}
-                                </ul>
-                                <button type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#getStartedCanvas"
-                                aria-controls="getStartedCanvas"
-                                onclick="Livewire.dispatch('openGetStartedCanvas')"
-                                    class="text-white bg-fuchsia-700 hover:bg-lime-500
-                                    focus:ring-4 focus:outline-none focus:ring-blue-200
-                                    font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
-                                    Choose
-                                    plan</button>
-                                <div class="flex items-baseline text-gray-900 dark:text-white my-2">
-                                    <span class="ms-1 text-md font-normal text-gray-400">₹3,000/- Annual Web Hosting Renewal Fee</span>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
 
                         <div class="mt-4"
@@ -215,7 +143,11 @@
                             aria-controls="offerCanvas"
                             onclick="Livewire.dispatch('openOfferCanvas')"
                              class="text-center text-stone-400 cursor-pointer">
-                                <h3>Avail exclusive discounts on our services by <u class="text-fuchsia-400">clicking here</u></h3>
+                                <h3>Apply for exclusive upto 30% discounts on our services by <u class="text-fuchsia-400">clicking here</u>
+                                    <div class="spinner-grow text-lime-400 h-3 w-3 ms-2" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </h3>
                             </a>
                         </div>
                     </div>

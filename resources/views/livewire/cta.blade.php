@@ -20,41 +20,33 @@
             <div class="container py-3">
                 <div class="row">
                     <div class="col-12 my-auto mx-auto text-center">
-                        <div class="mx-auto mb-3">
+                        <div class="mx-auto mb-4">
                             <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
                                     class="img-fluid h-14 md:h-20 mx-auto" alt="iCommerce Logo">
                         </div>
                         <h2 class="text-fuchsia-500 poppins-semibold text-4xl md:text-5xl text-uppercase">
-                            Exclusive 30% Discount
+                            UPTO 30% Discount
                         </h2>
-                        <p class="text-gray-200 text-xl md:text-2xl my-3">Sign up before {{ $expiry_date }} and enjoy an exclusive
-                            30% discount on our services.</p>
+                        <p class="text-gray-200 text-xl md:text-2xl my-3">Apply before {{ $expiry_date }} and enjoy an exclusive discount on our services.</p>
 
                         <div class="row mt-4 mt-md-5">
                             <div class="col-12 col-md-8 mx-auto">
                                 <div class="d-flex flex-column flex-sm-row gap-4 justify-center">
+                                    @foreach (config('icrm.pricing') as $plan)
+
+
                                     <div
                                         class="border-solid border-1 border-stone-100 py-3 px-4 text-start rounded-lg shadow-lg">
                                         <div class="text-gray-300">
-                                            Startup plan
+                                            {{ $plan['name'] }}
                                         </div>
                                         <div class="flex items-baseline text-gray-900 dark:text-white">
                                             <span class="text-3xl font-semibold">₹</span>
-                                            <span class="text-4xl md:text-5xl font-extrabold tracking-tight">17,500</span>
-                                            <span class="ms-1 text-xl font-normal text-gray-400"><strike>₹25,000</strike></span>
+                                            <span class="text-4xl md:text-5xl font-extrabold tracking-tight">{{number_format(($plan['mrp'] * (100 - $plan['discount']) / 100)) }}</span>
+                                            <span class="ms-1 text-xl font-normal text-gray-400"><strike>{{number_format($plan['mrp']) }}</strike></span>
                                         </div>
                                     </div>
-                                    <div
-                                        class="border-solid border-1 border-stone-100 py-3 px-4 text-start rounded-lg shadow-lg">
-                                        <div class="text-gray-300">
-                                            Enterprise plan
-                                        </div>
-                                        <div class="flex items-baseline text-gray-900 dark:text-white">
-                                            <span class="text-3xl font-semibold">₹</span>
-                                            <span class="text-4xl md:text-5xl font-extrabold tracking-tight">24,500</span>
-                                            <span class="ms-1 text-xl font-normal text-gray-400"><strike>₹35,000</strike></span>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
 
                                 <div class="mt-5 mb-3">
