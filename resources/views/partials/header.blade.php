@@ -20,7 +20,7 @@
                 <div class="my-auto">
                     <a href="{{ route('welcome') }}">
                         <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
-                            class="img-fluid h-14" alt="">
+                            class="img-fluid h-14" alt="iCommerce Logo">
                     </a>
                     {{-- <h1 class="text-white text-3xl inter-600">
                         ICRM Software

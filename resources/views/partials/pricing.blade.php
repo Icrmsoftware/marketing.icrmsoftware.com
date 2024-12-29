@@ -12,13 +12,13 @@
                         </p>
                     </div>
                     <div class="col-12 col-lg-12 mx-auto">
-                        <div class="d-flex flex-column flex-sm-row gap-5 gap-sm-4">
+                        <div class="d-flex flex-column flex-lg-row gap-5 gap-sm-4">
                             @foreach (config('icrm.pricing') as $plan)
                             <div class="col p-4 bg-stone-900 border-solid border-1 border-gray-200 rounded-lg shadow sm:p-8">
-                                <h5 class="mb-4 text-xl font-medium text-gray-400">{{ $plan['name'] }}</h5>
-                                <div class="flex items-baseline text-gray-900 dark:text-white">
-                                    <span class="text-3xl font-semibold">₹</span>
-                                    <span class="text-5xl font-extrabold tracking-tight">{{number_format($plan['mrp'] * ( 100 - $plan['discount']) / 100) }}</span>
+                                <h3 class="mb-4 text-xl font-medium text-gray-400">{{ $plan['name'] }}</h3>
+                                <div class="flex items-baseline">
+                                    <span class="text-3xl font-semibold text-white">₹</span>
+                                    <span class="text-5xl font-extrabold tracking-tight text-white">{{number_format($plan['mrp'] * ( 100 - $plan['discount']) / 100) }}</span>
                                     <span class="ms-1 text-xl font-normal text-gray-400 line-through">₹{{number_format($plan['mrp']) }}</span>
                                 </div>
                                 <ul role="list" class="space-y-5 my-7">
@@ -43,6 +43,30 @@
                                             Upto {{ $plan['pages'] }} web pages
                                         </span>
                                     </li>
+
+                                    <li class="flex items-center">
+                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
+                                            Website hosting
+                                        </span>
+                                    </li>
+
+                                    <li class="flex items-center">
+                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                        </svg>
+                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
+                                            Content writing
+                                        </span>
+                                    </li>
+
+
 
                                     <li class="flex">
                                         <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true"
@@ -108,14 +132,6 @@
                                             Fast-loading pages
                                         </span>
                                     </li>
-                                    <li class="flex">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-lime-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                        </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-400 ms-3">
-                                            One-time revision included
-                                        </span>
-                                    </li>
 
                                 </ul>
                                 <button type="button"
@@ -170,22 +186,22 @@
                     </div>
                     <div class="my-auto d-flex gap-1 gap-sm-4 py-2 justify-center">
                         <div>
-                            <img src="{{ Voyager::image('/Images/01.png') }}"
+                            <img src="{{ Voyager::image('/Images/01.webp') }}"
                             class="img-fluid h-16 rounded-1"
                             alt="">
                         </div>
                         <div>
-                            <img src="{{ Voyager::image('/Images/02.png') }}"
+                            <img src="{{ Voyager::image('/Images/02.webp') }}"
                             class="img-fluid h-16 rounded-1"
                             alt="">
                         </div>
                         <div>
-                            <img src="{{ Voyager::image('/Images/03.png') }}"
+                            <img src="{{ Voyager::image('/Images/03.webp') }}"
                             class="img-fluid h-16 rounded-1"
                             alt="">
                         </div>
                         <div>
-                            <img src="{{ Voyager::image('/Images/04.png') }}"
+                            <img src="{{ Voyager::image('/Images/04.webp') }}"
                             class="img-fluid h-16 rounded-1"
                             alt="">
                         </div>

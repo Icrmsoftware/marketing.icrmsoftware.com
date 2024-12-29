@@ -31,7 +31,9 @@
 
                         <div class="row mt-4 mt-md-5">
                             <div class="col-12 col-md-8 mx-auto">
-                                <div class="d-flex flex-column flex-sm-row gap-4 justify-center">
+                                <div class="d-none d-md-block">
+                                    <div class="d-flex flex-column flex-sm-row gap-4 justify-center
+                                ">
                                     @foreach (config('icrm.pricing') as $plan)
 
 
@@ -47,6 +49,7 @@
                                         </div>
                                     </div>
                                     @endforeach
+                                </div>
                                 </div>
 
                                 <div class="mt-5 mb-3">
@@ -93,11 +96,21 @@
             // Calculate the current scroll position as a percentage
             const scrollPosition = window.scrollY / documentHeight;
 
+            // Determine the scroll thresholds based on device width
+            let scrollThreshold;
+            if (window.innerWidth <= 768) {
+                scrollThreshold = 0.85;
+            } else if (window.innerWidth <= 1024) {
+                scrollThreshold = 0.85;
+            } else {
+                scrollThreshold = 0.70;
+            }
+
             // Get the target element
             const ctaElement = document.getElementById("offerCanvas");
 
-            // Show the offcanvas if the user has scrolled 75% and it hasn't been shown before
-            if (scrollPosition >= 0.70 && !canvasShown) {
+            // Show the offcanvas if the user has scrolled past the threshold and it hasn't been shown before
+            if (scrollPosition >= scrollThreshold && !canvasShown) {
                 ctaElement.classList.add("show");
                 Livewire.dispatch('showCanvas');
                 canvasShown = true; // Update the flag to prevent showing again
@@ -112,3 +125,4 @@
         });
     });
 </script>
+

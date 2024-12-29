@@ -23,4 +23,20 @@ class WelcomeController extends Controller
         ]);
     }
 
+    public function manufacturing()
+    {
+
+        $title = "Website Design Services For Manufacturing Company";
+        $description = "Your vision, our design expertise. Build a website that not only looks great but works to convert visitors into loyal customers.";
+        $image = Voyager::image('/Images/hero_2.png');
+        $url = Request::url();
+
+        return view('manufacturing')->with([
+            'title' => $title,
+            'description' => $description,
+            'image' => $image,
+            'url' => $url,
+        ]);
+    }
+
 }

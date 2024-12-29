@@ -1,8 +1,10 @@
 @extends('layouts.website')
 
+@section('seo')
+    @include('partials.seo')
+@endsection
+
 @section('content')
-
-
 
 @include('partials.home.hero')
 

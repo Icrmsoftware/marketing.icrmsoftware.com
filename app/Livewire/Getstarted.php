@@ -9,7 +9,7 @@ class Getstarted extends Component
 {
     public $canvas = false;
 
-    public $name, $mobile, $email;
+    public $name, $mobile, $email, $url;
 
     public $expiry_date;
     protected $listeners = ['openGetStartedCanvas' => 'openGetStartedCanvas'];
@@ -17,7 +17,7 @@ class Getstarted extends Component
     public function mount()
     {
         $this->canvas = false;
-
+        $this->url = request()->url();
         $currentDate = \Carbon\Carbon::now();
         $dayOfMonth = $currentDate->day;
 
@@ -84,6 +84,8 @@ class Getstarted extends Component
         $lead->name = $this->name;
         $lead->mobile = $this->mobile;
         $lead->email = $this->email;
+        $lead->landing_page = $this->url;
+        $lead->cta = 'Get Started';
         $lead->save();
 
         return redirect()->route('welcome')->with([

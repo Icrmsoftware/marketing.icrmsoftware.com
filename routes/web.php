@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
+Route::get('/website-design-services-for-manufacturing-company', [WelcomeController::class, 'manufacturing'])->name('manufacturing');
 
 Route::middleware([
     'auth:sanctum',

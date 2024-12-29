@@ -11,7 +11,7 @@ class Cta extends Component
     public $scroll = 53;
     public $expiry_date;
 
-    public $name, $mobile;
+    public $name, $mobile, $url;
 
     // Ensure the listener method is correctly set
     protected $listeners = [
@@ -37,6 +37,7 @@ class Cta extends Component
     public function mount()
     {
         $this->canvas = false;
+        $this->url = request()->url();
 
         $currentDate = \Carbon\Carbon::now();
         $dayOfMonth = $currentDate->day;
@@ -92,6 +93,8 @@ class Cta extends Component
         $lead = new Lead();
         $lead->name = $this->name;
         $lead->mobile = $this->mobile;
+        $lead->landing_page = $this->url;
+        $lead->cta = 'Discount';
         $lead->save();
 
         return redirect()->route('welcome')->with([

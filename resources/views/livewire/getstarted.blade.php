@@ -27,7 +27,7 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                                         class="img-fluid h-14 md:h-16 lg:h-20" alt="iCommerce Logo">
                                 </div>
                                 <div>
-                                    <h2 class="text-5xl md:text-8xl lg:text-8xl text-white poppins-semibold">You're in <span
+                                    <h2 class="text-4xl md:text-8xl lg:text-8xl text-white poppins-semibold">You're in <span
                                             class="text-fuchsia-400">Trusted</span> Hands!</h2>
                                     <p class="text-xl md:text-2xl text-gray-400 mt-2 mt-md-0">
                                         Join over 10,000 satisfied customers as we craft your vision into a beautifully
@@ -66,7 +66,7 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                                                     <small class="text-danger">{{ $message }}</small>
                                                     @enderror
                                                 </div>
-                                                <div class="form-group">
+                                                {{-- <div class="form-group">
                                                     <label class="font-regular mb-2 text-md text-gray-400">Email <small
                                                             class="opacity-75">(optional)</small></label>
                                                     <input type="text" class="form-control border rounded-1"
@@ -75,7 +75,7 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                                                     @error('email')
                                                     <small class="text-danger">{{ $message }}</small>
                                                     @enderror
-                                                </div>
+                                                </div> --}}
                                                 <div class="form-group text-zinc-500">
                                                     <input type="checkbox" class="accent-pink-300 me-1" checked> I agree to
                                                     the terms & conditions and privacy policy of iCommerce.co.in

@@ -3,7 +3,7 @@
         <div class="d-flex justify-between flex-column flex-lg-row gap-lg-4">
             <div
                 class="col-span-3 lg:rounded-xl
-            bg-purple-100
+            bg-stone-900
             cursor-pointer relative overflow-hidden">
                 <div class="my-auto justify-center">
                     <div class="d-flex flex-column flex-md-row">
@@ -11,13 +11,13 @@
                         ps-lg-4 pe-lg-5
                         py-8 px-3
                         py-lg-5 my-auto">
-                            <h1 class="poppins-semibold text-4xl lg:text-6xl text-uppercase">
+                            <h1 class="poppins-semibold text-4xl lg:text-6xl text-uppercase text-white">
                                 <span>Web Development</span> Services For Your Revenue Growth
                             </h1>
-                            <h3 class="text-lg lg:text-xl ps-2 text-zinc-600 mt-3 mb-2 inter-400">
+                            <p class="text-lg lg:text-xl ps-2 text-stone-400 mt-3 mb-2 inter-400">
                                 Your vision, our design expertise. Build a website that not only looks great but works
                                 to convert visitors into loyal customers.
-                            </h3>
+                            </p>
                             <div class="d-flex gap-3 mt-4 ms-2">
                                 <div>
                                     <a
@@ -26,16 +26,16 @@
                                         data-bs-target="#getStartedCanvas"
                                         aria-controls="getStartedCanvas"
                                         onclick="Livewire.dispatch('openGetStartedCanvas')" --}}
-                                        class="btn btn-dark rounded-3 text-lg lg:text-lg py-2.5 px-4 font-semibold text-uppercase">
+                                        class="btn bg-fuchsia-800 hover:bg-fuchsia-700 text-white rounded-3 text-lg lg:text-lg py-2.5 px-4 font-semibold text-uppercase">
                                         Learn More
                                     </a>
-                                    <p class="mt-3 text-lg lg:text-lg text-zinc-500 inter-300">Get Your Free Consultation Today!
+                                    <p class="mt-3 text-lg lg:text-lg text-stone-400 inter-300">Get Your Free Consultation Today!
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="my-auto">
-                            <img src="{{ Voyager::image('/Images/Web Development Services For Your Revenue Growth.png') }}"
+                            <img src="{{ Voyager::image('/Images/Web Development Services For Your Revenue Growth.webp') }}"
                                 class="img-fluid" alt="Web Development Services For Your Revenue Growth">
                         </div>
                     </div>
