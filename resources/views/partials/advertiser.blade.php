@@ -76,3 +76,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 {{-- Ahrefs Web Analytics --}}
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="huNFRfSO47B/a2FAzHCmYg" defer="true"></script>
+
+
+@if (Session::has('alert-message'))
+    <!-- Event snippet for Lead (1) conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-662059341/x4FeCJi4mP4ZEM3y2LsC'});
+    </script>
+@endif
