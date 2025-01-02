@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Getstarted extends Component
 {
-    public $canvas = false;
+    public $canvas = true;
 
     public $name, $mobile, $email, $url;
 
@@ -95,6 +95,6 @@ class Getstarted extends Component
     }
     public function render()
     {
-        return view('livewire.getstarted');
+        return view('livewire.getstarted')->layout('layouts.website');
     }
 }

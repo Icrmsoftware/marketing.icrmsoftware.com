@@ -1,5 +1,5 @@
 <section class="pt-md-5 pb-md-5" id="features" x-data="{ tab: 'Web Design' }">
-    <div class="container py-5 py-md-3">
+    <div class="container py-5 py-md-5">
         <div class="row">
             <div class="col-12 col-lg-9 mx-auto">
                 <div class="text-center mb-8 md:px-10">
@@ -86,13 +86,6 @@
                             <div>
                                 <h3 class="text-xl poppins-semibold mb-2">Responsive Designs for All Devices</h3>
                                 <p class="text-md inter-400">Your website will look stunning and function perfectly on desktops, tablets, and mobiles.</p>
-                                <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')"
-                                    class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                    Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-lg my-auto">
@@ -106,12 +99,6 @@
                                     <div class="my-auto ps-md-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Custom Layouts Aligned with Your Brand</h3>
                                         <p class="text-md inter-400">Designs tailored to reflect your brand’s personality and goals.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md col-lg-12 bg-green-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-lg-row gap-3">
@@ -123,12 +110,6 @@
                                     <div class="my-auto ps-md-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Fast-Loading, Sleek Interfaces</h3>
                                         <p class="text-md inter-400">Deliver a seamless browsing experience with optimized, high-speed pages.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -148,12 +129,6 @@
                                         <div class="my-auto">
                                             <h3 class="text-xl poppins-semibold my-2">Content Management System</h3>
                                             <p class="text-md inter-400">Easily update and control your website content anytime.</p>
-                                            <a data-bs-toggle="offcanvas"
-                                                data-bs-target="#getStartedCanvas"
-                                                aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                                Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -167,12 +142,6 @@
                                         <div class="my-auto">
                                             <h3 class="text-xl poppins-semibold mb-2">Real-Time Editing and Publishing</h3>
                                             <p class="text-md inter-400">Make changes and see them live instantly on your website.</p>
-                                            <a data-bs-toggle="offcanvas"
-                                        data-bs-target="#getStartedCanvas"
-                                        aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                                Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -186,12 +155,6 @@
                                         <div class="my-auto">
                                             <h3 class="text-xl poppins-semibold mb-2">Scalable Structure for Growth</h3>
                                             <p class="text-md inter-400">Designed to grow with your business and its evolving needs.</p>
-                                            <a data-bs-toggle="offcanvas"
-                                        data-bs-target="#getStartedCanvas"
-                                        aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                                Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,12 +172,6 @@
                             <div class="mt-3">
                                 <h3 class="text-xl poppins-semibold my-2">Basic SEO Setup</h3>
                                 <p class="text-md inter-400">Lay the foundation for better online visibility.</p>
-                                <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                    Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-lg my-auto">
@@ -228,12 +185,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Optimized Meta Tags and Keywords</h3>
                                         <p class="text-md inter-400">Ensure your website aligns with search engine requirements.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-12 bg-blue-200 shadow-md rounded-3 px-4 py-5 d-flex flex-column flex-sm-row">
@@ -245,12 +196,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Performance Tracking</h3>
                                         <p class="text-md inter-400">Monitor your rankings and improve over time.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -268,12 +213,6 @@
                                 <div class="mt-2 mt-md-0 mt-lg-4">
                                     <h3 class="text-xl poppins-semibold my-2">SSL Certification</h3>
                                     <p class="text-md inter-400">Protect your website and its users with top-notch encryption.</p>
-                                    <a data-bs-toggle="offcanvas"
-                                        data-bs-target="#getStartedCanvas"
-                                        aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                        Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md bg-blue-200 shadow-md rounded-3 px-4 py-5">
@@ -285,12 +224,6 @@
                                 <div class="my-auto ps-md-3 mt-4">
                                     <h3 class="text-xl poppins-semibold mb-2">Automatic Backups</h3>
                                     <p class="text-md inter-400">Keep your data safe with regular and reliable backups.</p>
-                                    <a data-bs-toggle="offcanvas"
-                                data-bs-target="#getStartedCanvas"
-                                aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                        Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md bg-yellow-200 shadow-md rounded-3 px-4 py-5">
@@ -302,12 +235,6 @@
                                 <div class="my-auto ps-md-3 mt-2">
                                     <h3 class="text-xl poppins-semibold mb-2">High-Speed Hosting</h3>
                                     <p class="text-md inter-400">Enjoy faster load times with scalable, high-performance AWS servers.</p>
-                                    <a data-bs-toggle="offcanvas"
-                                data-bs-target="#getStartedCanvas"
-                                aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                        Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -325,12 +252,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold my-2">Laravel Framework</h3>
                                         <p class="text-md inter-400">Power your applications with one of the most elegant and robust PHP frameworks.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -344,12 +265,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Livewire Components</h3>
                                         <p class="text-md inter-400">Enhance user experience with dynamic, reactive components.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -363,12 +278,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Bootstrap Framework</h3>
                                         <p class="text-md inter-400">Create responsive, mobile-first designs effortlessly.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -382,12 +291,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">Tailwind CSS</h3>
                                         <p class="text-md inter-400">Design faster with a modern utility-first CSS framework.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -401,12 +304,6 @@
                                     <div class="my-auto ps-3">
                                         <h3 class="text-xl poppins-semibold mb-2">jQuery Library</h3>
                                         <p class="text-md inter-400">Simplify scripting and enhance your application's interactivity.</p>
-                                        <a data-bs-toggle="offcanvas"
-                                    data-bs-target="#getStartedCanvas"
-                                    aria-controls="getStartedCanvas"
-                                    onclick="Livewire.dispatch('openGetStartedCanvas')" class="btn btn-dark rounded-2 btn-md mt-3 text-base inter-500">
-                                            Learn more <i class="fa-light fa-arrow-right ms-1 animate-bounce"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

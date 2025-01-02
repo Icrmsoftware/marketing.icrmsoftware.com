@@ -1,5 +1,5 @@
 <section class="py-5 bg-stone-900" id="pricing">
-    <div class="container py-4">
+    <div class="container py-5">
         <div class="row">
             <div class="col-12 col-lg-10 mx-auto">
                 <div class="row">
@@ -134,16 +134,12 @@
                                     </li>
 
                                 </ul>
-                                <button type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#getStartedCanvas"
-                                aria-controls="getStartedCanvas"
-                                onclick="Livewire.dispatch('openGetStartedCanvas')"
+                                <a href="{{ route('getstarted') }}"
                                     class="text-white bg-fuchsia-700 hover:bg-lime-500
                                     focus:ring-4 focus:outline-none focus:ring-blue-200
                                     font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Choose
-                                    plan</button>
+                                    plan</a>
                                 <div class="flex items-baseline text-gray-900 dark:text-white my-2">
                                     <span class="ms-1 text-md font-normal text-gray-400">₹3,000/- Annual Web Hosting Renewal Fee</span>
                                 </div>
@@ -154,10 +150,7 @@
                         <div class="mt-4"
                         >
                             <a
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#offerCanvas"
-                            aria-controls="offerCanvas"
-                            onclick="Livewire.dispatch('openOfferCanvas')"
+                                href="{{ route('getstarted') }}"
                              class="text-center text-stone-400 cursor-pointer">
                                 <h3>Apply for exclusive upto 30% discounts on our services by <u class="text-fuchsia-400">clicking here</u>
                                     <div class="spinner-grow text-lime-400 h-3 w-3 ms-2" role="status">
@@ -173,7 +166,7 @@
 
     </div>
 </section>
-<section class="bg-fuchsia-950 sticky-top d-none d-lg-block">
+<section class="bg-fuchsia-950 d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-12 my-auto py-4 py-md-1">

@@ -13,7 +13,7 @@
 </div> --}}
 @endif
 
-<header class="py-3 bg-stone-950">
+<header class="py-3 bg-stone-950 sticky-top">
     <div class="container">
         <div class="row">
             <div class="d-flex justify-between">

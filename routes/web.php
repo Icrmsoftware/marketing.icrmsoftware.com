@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\WelcomeController;
+use App\Livewire\Getstarted;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/website-design-services-for-manufacturing-company', [WelcomeController::class, 'manufacturing'])->name('manufacturing');
+
+Route::get('/get-started', Getstarted::class)->name('getstarted');
 
 Route::middleware([
     'auth:sanctum',

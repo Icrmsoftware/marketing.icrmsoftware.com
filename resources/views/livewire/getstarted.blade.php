@@ -4,17 +4,26 @@ data-bs-toggle="offcanvas"
 data-bs-target="#getStartedCanvas"
 aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
 
-    <div class="offcanvas offcanvas-bottom bg-black @if($this->canvas == true) show @endif"
+    @section('seo')
+        @php
+            $title = "Get Started";
+            $description = "Your vision, our design expertise. Build a website that not only looks great but works to convert visitors into loyal customers.";
+            $image = Voyager::image('/Images/hero_2.png');
+            $url = Request::url();
+        @endphp
+        @include('partials.seo')
+    @endsection
+
+    <div class="offcanvas offcanvas-bottom bg-black show @if($this->canvas == true) show @endif"
         style="min-block-size: 100%;" data-bs-scroll="false"
         data-bs-backdrop="false" tabindex="-1" id="getStartedCanvas" aria-labelledby="getStartedCanvasLabel">
         <div class="offcanvas-header bg-black">
             {{-- <h5 class="offcanvas-title" id="getStartedCanvasLabel">Offcanvas with body scrolling</h5> --}}
-            <button type="button"
-            wire:click="closeGetStartedCanvas()"
-            class="btn-close me-2" style="color: white !important" data-bs-dismiss="offcanvas"
-                aria-label="Close">
+            <a href="{{ url()->previous() }}"
+                class="btn-close me-2" style="color: white !important;">
                 <i class="fa fa-times text-3xl"></i>
-            </button>
+            </a>
+
         </div>
         <div class="offcanvas-body bg-black">
             <div class="container">
@@ -23,8 +32,10 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
                         <div class="row">
                             <div class="col-12 col-lg my-auto">
                                 <div class="mb-3 mb-lg-5 d-none d-lg-block">
-                                    <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
+                                    <a href="{{ url()->previous() }}">
+                                        <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
                                         class="img-fluid h-14 md:h-16 lg:h-20" alt="iCommerce Logo">
+                                    </a>
                                 </div>
                                 <div>
                                     <h2 class="text-4xl md:text-8xl lg:text-8xl text-white poppins-semibold">You're in <span

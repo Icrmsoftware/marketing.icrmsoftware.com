@@ -22,10 +22,6 @@
                                 <div>
                                     <a
                                         href="#features"
-                                        {{-- data-bs-toggle="offcanvas"
-                                        data-bs-target="#getStartedCanvas"
-                                        aria-controls="getStartedCanvas"
-                                        onclick="Livewire.dispatch('openGetStartedCanvas')" --}}
                                         class="btn bg-fuchsia-800 hover:bg-fuchsia-700 text-white rounded-3 text-lg lg:text-lg py-2.5 px-4 font-semibold text-uppercase">
                                         Learn More
                                     </a>
@@ -71,8 +67,7 @@
                     </p>
 
                     <div class="mt-4">
-                        <a data-bs-toggle="offcanvas" data-bs-target="#getStartedCanvas"
-                            aria-controls="getStartedCanvas" onclick="Livewire.dispatch('openGetStartedCanvas')"
+                        <a href="{{ route('getstarted') }}"
                             class="btn btn-lg
                         border-solid border-1
                         {{-- bg-lime-400 hover:bg-lime-300 text-zinc-950 --}}

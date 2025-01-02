@@ -8,7 +8,7 @@
 
 @include('partials.manufacturing.hero')
 
-@include('partials.manufacturing.features')
+@include('partials.home.features')
 @include('partials.manufacturing.stats')
 
 @include('partials.pricing')
@@ -21,9 +21,9 @@
 
 
 @include('partials.manufacturing.faq')
-@livewire('cta')
+{{-- @livewire('cta')
 
-@livewire('getstarted')
+@livewire('getstarted') --}}
 
 
 

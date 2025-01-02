@@ -21,9 +21,9 @@
 
 
 @include('partials.home.faq')
-@livewire('cta')
+{{-- @livewire('cta') --}}
 
-@livewire('getstarted')
+{{-- @livewire('getstarted') --}}
 
 
 

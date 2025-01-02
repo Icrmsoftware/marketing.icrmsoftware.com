@@ -64,6 +64,10 @@
 
 <body class="bg-white">
     @include('partials.header')
+
+    @isset($slot)
+        {{ $slot }}
+    @endisset
     @yield('content')
     @include('partials.footer')
 
