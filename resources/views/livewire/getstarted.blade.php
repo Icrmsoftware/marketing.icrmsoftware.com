@@ -9,7 +9,6 @@ aria-controls="getStartedCanvas">Enable body scrolling</button> --}}
             $title = "Get Started";
             $description = "Your vision, our design expertise. Build a website that not only looks great but works to convert visitors into loyal customers.";
             $image = Voyager::image('/Images/hero_2.png');
-            $url = Request::url();
         @endphp
         @include('partials.seo')
     @endsection

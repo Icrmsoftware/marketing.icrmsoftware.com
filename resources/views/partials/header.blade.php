@@ -18,7 +18,7 @@
         <div class="row">
             <div class="d-flex justify-between">
                 <div class="my-auto">
-                    <a href="{{ route('welcome') }}">
+                    <a href="{{ $url }}">
                         <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
                             class="img-fluid h-14" alt="iCommerce Logo">
                     </a>
@@ -42,7 +42,7 @@
                           <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                             <div class="offcanvas-header bg-black my-auto">
                               <div class="my-auto">
-                                <a href="{{ route('welcome') }}">
+                                <a href="{{ $url }}">
                                     <img src="https://icommerce.co.in//storage/settings/May2023/PWc4rbir5SgM8o39hTPW.webp"
                                         class="img-fluid h-14" alt="">
                                 </a>

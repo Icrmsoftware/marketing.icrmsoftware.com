@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/website-design-services-for-manufacturing-company', [WelcomeController::class, 'manufacturing'])->name('manufacturing');
+Route::get('/redesign', [WelcomeController::class, 'redesign'])->name('redesign');
 
 Route::get('/get-started', Getstarted::class)->name('getstarted');
 
